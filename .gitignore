@@ -1,0 +1,68 @@
+# JUANSBIZ .gitignore Template
+# Apply this to each app's _CODE folder
+
+# ===========================================
+# SECRETS - NEVER COMMIT THESE
+# ===========================================
+.env
+.env.local
+.env.*.local
+*.key
+API-KEYS.md
+CREDENTIALS.md
+*secret*
+*password*
+credentials/
+secrets/
+
+# ===========================================
+# DEPENDENCIES
+# ===========================================
+node_modules/
+dist/
+build/
+.next/
+.nuxt/
+output/
+
+# ===========================================
+# OS FILES
+# ===========================================
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# ===========================================
+# LOGS
+# ===========================================
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# ===========================================
+# IDE
+# ===========================================
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.project
+.settings/
+
+# ===========================================
+# TEST & COVERAGE
+# ===========================================
+coverage/
+.nyc_output/
+*.test.js
+*.spec.js
+
+# ===========================================
+# BUILD ARTIFACTS
+# ===========================================
+*.tgz
+.cache/

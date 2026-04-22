@@ -1,0 +1,301 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/webp" href="/favicon.webp" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Preconnect to improve performance -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <!--
+      Route Preloading Strategy:
+      - Critical vendor chunks are preloaded via Vite's built-in modulepreload
+      - Additional route prefetching happens on sidebar hover via usePrefetch hook
+      - This enables instant navigation by loading chunks before the user clicks
+    -->
+
+    <!-- Preload critical hero image for faster LCP -->
+    <link
+      rel="preload"
+      as="image"
+      href="/demo-screenshot-desktop.webp"
+      type="image/webp"
+      media="(min-width: 768px)"
+    />
+    <link
+      rel="preload"
+      as="image"
+      href="/demo-screenshot-mobile.webp"
+      type="image/webp"
+      media="(max-width: 767px)"
+    />
+
+    <!-- Preload Inter font for body -->
+    <link
+      rel="preload"
+      as="font"
+      href="https://fonts.gstatic.com/s/inter/v18/UcCO3FwrK3iLTeHuS_nVMrMxCp50SjIw2boKoduKmMEVuLyfAZ9hiJ-Ek-_EeA.woff2"
+      type="font/woff2"
+      crossorigin
+    />
+
+    <!--
+      AXOLOP TYPOGRAPHY BRANDING
+      =========================
+      - Body text: Inter (default)
+      - Headers: Epilogue (https://fonts.google.com/specimen/Epilogue)
+      
+      Epilogue adds a modern, clean, readable, and youthful feel to all headers.
+    -->
+
+    <!-- Preload Epilogue font for headers -->
+    <link
+      rel="preload"
+      as="font"
+      href="https://fonts.gstatic.com/s/epilogue/v16/O4z3jQIV9lRsJ3C7R-dIUJnq3y4nYgtTK1wIPomfNT8.woff2"
+      type="font/woff2"
+      crossorigin
+    />
+
+    <!-- Inter font - CRITICAL (loads immediately for body) -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Epilogue font - Headers -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Epilogue:wght@400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!--
+      Premium fonts for Funnel Builder - DEFERRED
+      These only load after initial paint using print media trick
+      They switch to all media on load for non-blocking loading
+    -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+      media="print"
+      onload="this.media='all'"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap"
+      rel="stylesheet"
+      media="print"
+      onload="this.media='all'"
+    />
+    <!-- Fallback for browsers with JS disabled -->
+    <noscript>
+      <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet"
+      />
+      <link
+        href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap"
+        rel="stylesheet"
+      />
+    </noscript>
+
+    <!-- SEO Meta Tags -->
+    <title>
+      Axolop CRM - The New Age CRM with Local AI Second Brain | All-in-One
+      Platform
+    </title>
+    <meta
+      name="title"
+      content="Axolop CRM - The New Age CRM with Local AI Second Brain | All-in-One Platform"
+    />
+    <meta
+      name="description"
+      content="Axolop CRM: The New Age CRM with Local AI Second Brain. Replace 10+ tools with our all-in-one platform. HubSpot competitor for ECOMMERCE, B2B BUSINESS, REAL ESTATE. Features: AI assistant, Project Management, Mind Maps, Marketing Automation."
+    />
+    <meta
+      name="keywords"
+      content="CRM, Axolop, HubSpot alternative, AI CRM, sales automation, marketing automation, project management, mind maps, business automation, GoHighLevel competitor, e-commerce CRM, B2B CRM, real estate CRM, AI assistant"
+    />
+    <meta name="author" content="Axolop LLC" />
+    <meta name="robots" content="index, follow" />
+    <meta name="theme-color" content="#7b1c14" />
+    <meta name="msapplication-TileColor" content="#7b1c14" />
+
+    <!-- Theme-aware styles to prevent flash -->
+    <style>
+      /* System font fallback stack matching Inter metrics for minimal CLS */
+      :root {
+        --font-fallback:
+          -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+          "Helvetica Neue", Arial, sans-serif;
+      }
+
+      /* Set base font immediately to prevent FOIT */
+      html {
+        font-family: "Inter", var(--font-fallback);
+      }
+
+      /* Theme-aware backgrounds - light mode default */
+      html,
+      body,
+      #root {
+        background-color: #ffffff;
+        color: #0a0a0a;
+        transition:
+          background-color 0.2s ease-out,
+          color 0.2s ease-out;
+      }
+
+      /* Dark mode via system preference */
+      @media (prefers-color-scheme: dark) {
+        html,
+        body,
+        #root {
+          background-color: #0a0a0a;
+          color: #ffffff;
+        }
+      }
+
+      /* Dark mode via class (when user has explicit preference) */
+      html.dark,
+      html.dark body,
+      html.dark #root {
+        background-color: #0a0a0a !important;
+        color: #ffffff !important;
+      }
+
+      /* Light mode override when explicitly set */
+      html.light,
+      html.light body,
+      html.light #root {
+        background-color: #ffffff !important;
+        color: #0a0a0a !important;
+      }
+
+      /* Header preload styles */
+      .nav-preload {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        height: 64px;
+        background: linear-gradient(
+          to bottom,
+          rgba(17, 24, 39, 0.95),
+          rgba(17, 24, 39, 0.8),
+          transparent
+        );
+        backdrop-filter: blur(16px);
+        z-index: 50;
+      }
+    </style>
+
+    <!-- Theme detection script (runs before React to prevent flash) -->
+    <script>
+      (function () {
+        // Check localStorage for saved theme preference
+        var savedTheme =
+          localStorage.getItem("axolop-theme") || localStorage.getItem("theme");
+
+        if (savedTheme === "dark") {
+          document.documentElement.classList.add("dark");
+        } else if (savedTheme === "light") {
+          document.documentElement.classList.add("light");
+        }
+        // If no saved preference, CSS media query handles system preference
+      })();
+    </script>
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://www.axolop.com" />
+    <meta
+      property="og:title"
+      content="Axolop CRM - The New Age CRM with Local AI Second Brain"
+    />
+    <meta
+      property="og:description"
+      content="Replace 10+ tools with our all-in-one platform. Features AI assistant, Project Management, Mind Maps, Marketing Automation, and more."
+    />
+    <meta
+      property="og:image"
+      content="https://www.axolop.com/axolop-og-image.jpg"
+    />
+    <meta
+      property="og:image:alt"
+      content="Axolop CRM - All-in-One Business Platform"
+    />
+    <meta property="og:site_name" content="Axolop CRM" />
+    <meta property="og:locale" content="en_US" />
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:url" content="https://www.axolop.com" />
+    <meta
+      name="twitter:title"
+      content="Axolop CRM - The New Age CRM with Local AI Second Brain"
+    />
+    <meta
+      name="twitter:description"
+      content="Replace 10+ tools with our all-in-one platform. Features AI assistant, Project Management, Mind Maps, Marketing Automation, and more."
+    />
+    <meta
+      name="twitter:image"
+      content="https://www.axolop.com/axolop-twitter-image.jpg"
+    />
+    <meta
+      name="twitter:image:alt"
+      content="Axolop CRM - All-in-One Business Platform"
+    />
+    <meta name="twitter:site" content="@axolopcrm" />
+
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://www.axolop.com" />
+
+    <!-- Structured Data (JSON-LD) -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "SoftwareApplication",
+        "name": "Axolop CRM",
+        "description": "The New Age CRM with Local AI Second Brain. All-in-one platform replacing 10+ SaaS tools.",
+        "applicationCategory": "BusinessApplication",
+        "operatingSystem": "Web",
+        "offers": {
+          "@type": "Offer",
+          "price": "149.00",
+          "priceCurrency": "USD",
+          "availability": "https://schema.org/InStock"
+        },
+        "aggregateRating": {
+          "@type": "AggregateRating",
+          "ratingValue": "4.8",
+          "reviewCount": "250"
+        },
+        "creator": {
+          "@type": "Organization",
+          "name": "Axolop LLC"
+        }
+      }
+    </script>
+  </head>
+  <body>
+    <!-- Header preload to prevent flash -->
+    <div class="nav-preload" id="nav-preload"></div>
+    <div id="root"></div>
+    <script type="module" src="/frontend/main.jsx"></script>
+    <script>
+      // Remove preload immediately when React app mounts (no artificial delay)
+      window.addEventListener("DOMContentLoaded", () => {
+        const preload = document.getElementById("nav-preload");
+        if (preload) {
+          // Smooth fade out transition
+          preload.style.transition = "opacity 150ms";
+          preload.style.opacity = "0";
+          setTimeout(() => preload.remove(), 150);
+        }
+      });
+    </script>
+  </body>
+</html>

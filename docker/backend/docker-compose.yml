@@ -1,0 +1,53 @@
+services:
+  # Redis Cache Service (port 3008)
+  redis:
+    image: redis:7-alpine
+    container_name: axolop-redis-3008
+    restart: unless-stopped
+    ports:
+      - "3008:6379"
+    volumes:
+      - redis-data:/data
+    command: redis-server --appendonly yes --requirepass ${REDIS_PASSWORD:-crm_redis_password}
+    healthcheck:
+      test: ["CMD", "redis-cli", "-a", "${REDIS_PASSWORD:-crm_redis_password}", "ping"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+    networks:
+      - axolop-network
+
+  # Backend API Service (port 3007)
+  backend:
+    build:
+      context: ../
+      dockerfile: docker/backend/Dockerfile
+      target: backend
+    container_name: axolop-backend-3007
+    restart: unless-stopped
+    ports:
+      - "3007:3007"
+    env_file:
+      - ../../.env
+      - .env.docker
+    depends_on:
+      redis:
+        condition: service_healthy
+    healthcheck:
+      test: ["CMD", "node", "-e", "require('http').get('http://localhost:3007/health', (r) => {process.exit(r.statusCode === 200 ? 0 : 1)})"]
+      interval: 30s
+      timeout: 10s
+      start_period: 40s
+      retries: 3
+    networks:
+      - axolop-network
+    volumes:
+      - ../../logs:/app/logs
+
+networks:
+  axolop-network:
+    driver: bridge
+
+volumes:
+  redis-data:
+    driver: local

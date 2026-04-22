@@ -1,0 +1,48 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  /* Axolop Typography - Epilogue for ALL headers, Inter for body */
+  
+  /* ALL headers use Epilogue font */
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Epilogue', 'Inter', -apple-system, sans-serif !important;
+  }
+  
+  /* Tailwind text utilities - headers */
+  .text-2xl,
+  .text-3xl,
+  .text-4xl,
+  .text-5xl,
+  .text-6xl,
+  .text-7xl,
+  .text-8xl,
+  .text-9xl {
+    font-family: 'Epilogue', 'Inter', -apple-system, sans-serif !important;
+  }
+  
+  /* Display, headline, title classes */
+  .font-display,
+  .text-display,
+  .text-headline,
+  .text-title,
+  .font-epilogue {
+    font-family: 'Epilogue', 'Inter', -apple-system, sans-serif !important;
+  }
+  
+  /* Sidebar and navigation headers */
+  .font-sidebar,
+  .font-nav {
+    font-family: 'Epilogue', 'Inter', -apple-system, sans-serif !important;
+  }
+}
+
+body {
+  margin: 0;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
