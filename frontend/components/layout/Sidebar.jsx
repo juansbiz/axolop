@@ -65,7 +65,7 @@ export default function Sidebar({ isSidebarCollapsed, onMouseEnter, onMouseLeave
               onClick={() => setIsBrandOpen(!isBrandOpen)}
               className="w-full flex items-center gap-2 px-3 py-2 rounded-lg hover:bg-white/10 transition-colors"
             >
-              <div className="w-8 h-8 rounded-lg bg-purple-600 flex items-center justify-center">
+              <div className="w-8 h-8 rounded-lg bg-yellow-500 flex items-center justify-center">
                 <Store className="h-4 w-4 text-white" />
               </div>
               {!isSidebarCollapsed && (
@@ -92,7 +92,7 @@ export default function Sidebar({ isSidebarCollapsed, onMouseEnter, onMouseLeave
                 ))}
                 <button className="w-full flex items-center gap-2 px-3 py-2 hover:bg-white/10 transition-colors text-left border-t border-gray-700">
                   <Plus className="h-4 w-4 text-gray-400" />
-                  <span className="text-purple-400 text-sm">Add Brand</span>
+                  <span className="text-yellow-500 text-sm">Add Brand</span>
                 </button>
               </div>
             )}

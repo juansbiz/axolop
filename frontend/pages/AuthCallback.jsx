@@ -57,7 +57,7 @@ export default function AuthCallback() {
           <p className="text-gray-600 mb-4">{errorMessage}</p>
           <button
             onClick={() => navigate('/login')}
-            className="text-purple-600 hover:text-purple-700 font-medium"
+            className="text-yellow-500 hover:text-yellow-500 font-medium"
           >
             Back to Sign In
           </button>
@@ -69,7 +69,7 @@ export default function AuthCallback() {
   return (
     <div className="min-h-screen flex items-center justify-center">
       <div className="text-center">
-        <Loader2 className="h-8 w-8 animate-spin text-purple-600 mx-auto mb-4" />
+        <Loader2 className="h-8 w-8 animate-spin text-yellow-500 mx-auto mb-4" />
         <p className="text-gray-600">Completing authentication...</p>
       </div>
     </div>

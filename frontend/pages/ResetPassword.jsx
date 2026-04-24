@@ -53,7 +53,7 @@ export default function ResetPassword() {
           <p className="text-gray-600 mb-6">
             Your password has been updated successfully
           </p>
-          <Link to="/login" className="text-purple-600 hover:text-purple-700 font-medium">
+          <Link to="/login" className="text-yellow-500 hover:text-yellow-500 font-medium">
             Sign in with new password
           </Link>
         </div>
@@ -93,7 +93,7 @@ export default function ResetPassword() {
                   type="password"
                   value={formData.password}
                   onChange={(e) => setFormData({ ...formData, password: e.target.value })}
-                  className="w-full h-11 pl-10 pr-4 rounded-lg border border-gray-300 focus:ring-2 focus:ring-purple-500 focus:border-transparent"
+                  className="w-full h-11 pl-10 pr-4 rounded-lg border border-gray-300 focus:ring-2 focus:ring-yellow-500 focus:border-transparent"
                   placeholder="••••••••"
                   required
                 />
@@ -108,7 +108,7 @@ export default function ResetPassword() {
                   type="password"
                   value={formData.confirmPassword}
                   onChange={(e) => setFormData({ ...formData, confirmPassword: e.target.value })}
-                  className="w-full h-11 pl-10 pr-4 rounded-lg border border-gray-300 focus:ring-2 focus:ring-purple-500 focus:border-transparent"
+                  className="w-full h-11 pl-10 pr-4 rounded-lg border border-gray-300 focus:ring-2 focus:ring-yellow-500 focus:border-transparent"
                   placeholder="••••••••"
                   required
                 />
@@ -118,7 +118,7 @@ export default function ResetPassword() {
             <button
               type="submit"
               disabled={loading}
-              className="w-full h-11 bg-purple-600 text-white font-medium rounded-lg hover:bg-purple-700 transition-colors disabled:opacity-50 flex items-center justify-center gap-2"
+              className="w-full h-11 bg-yellow-500 text-white font-medium rounded-lg hover:bg-yellow-500 transition-colors disabled:opacity-50 flex items-center justify-center gap-2"
             >
               {loading && <Loader2 className="h-4 w-4 animate-spin" />}
               Reset Password
@@ -131,7 +131,7 @@ export default function ResetPassword() {
         <div className="h-full flex items-center justify-center">
           <div className="text-center text-white">
             <h2 className="text-4xl font-bold mb-4">You're all set!</h2>
-            <p className="text-purple-100 text-lg">Create a strong password to protect your account</p>
+            <p className="text-yellow-500 text-lg">Create a strong password to protect your account</p>
           </div>
         </div>
       </div>

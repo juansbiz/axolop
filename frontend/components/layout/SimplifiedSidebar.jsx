@@ -150,7 +150,7 @@ export default function SimplifiedSidebar({ isSidebarCollapsed, onMouseEnter, on
                         className={`
                           flex items-center gap-3 px-3 py-2 rounded-lg transition-colors
                           ${isActive 
-                            ? "bg-purple-600/20 text-purple-400" 
+                            ? "bg-yellow-500/20 text-yellow-400" 
                             : "text-gray-400 hover:text-white hover:bg-white/10"
                           }
                         `}
@@ -240,7 +240,7 @@ export default function SimplifiedSidebar({ isSidebarCollapsed, onMouseEnter, on
                       }}
                       className={`
                         w-full flex items-center gap-2 px-3 py-2 hover:bg-gray-50 transition-colors text-left
-                        ${b.id === currentBrand?.id ? "bg-purple-50" : ""}
+                        ${b.id === currentBrand?.id ? "bg-yellow-50" : ""}
                       `}
                     >
                       {b.logo_url ? (

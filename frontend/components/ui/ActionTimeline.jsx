@@ -49,7 +49,7 @@ export default function ActionTimeline({ isOpen, onClose }) {
             className={cn(
               "fixed top-0 right-0 bottom-0 z-[9999] w-[400px] max-w-[90vw]",
               "bg-white dark:bg-[#0f0f0f]",
-              "border-l border-gray-200/60 dark:border-[#3F0D28]/20",
+              "border-l border-gray-200/60 dark:border-[#101010]/20",
               "shadow-2xl dark:shadow-[0_0_60px_rgba(0,0,0,0.5)]",
               "flex flex-col"
             )}
@@ -57,7 +57,7 @@ export default function ActionTimeline({ isOpen, onClose }) {
             {/* Header */}
             <div className="flex items-center justify-between px-6 py-4 border-b border-gray-200/60 dark:border-gray-800">
               <div className="flex items-center gap-3">
-                <Clock className="w-5 h-5 text-[#5B1046] dark:text-purple-400" />
+                <Clock className="w-5 h-5 text-[#101010] dark:text-yellow-500" />
                 <h2 className="text-lg font-semibold text-gray-900 dark:text-gray-100">
                   Action History
                 </h2>
@@ -114,14 +114,14 @@ export default function ActionTimeline({ isOpen, onClose }) {
                           "w-8 h-8 rounded-lg flex items-center justify-center flex-shrink-0",
                           action.isUndone
                             ? "bg-gray-100 dark:bg-gray-800"
-                            : "bg-purple-50 dark:bg-purple-900/20"
+                            : "bg-yellow-50 dark:bg-yellow-900/20"
                         )}>
                           {ActionIcon ? (
                             <ActionIcon className={cn(
                               "w-4 h-4",
                               action.isUndone
                                 ? "text-gray-400 dark:text-gray-600"
-                                : "text-purple-600 dark:text-purple-400"
+                                : "text-yellow-500 dark:text-yellow-500"
                             )} />
                           ) : (
                             <Clock className="w-4 h-4 text-gray-400" />
@@ -152,8 +152,8 @@ export default function ActionTimeline({ isOpen, onClose }) {
                             onClick={() => undoAction(action.id)}
                             className={cn(
                               "p-1.5 rounded-md opacity-0 group-hover:opacity-100",
-                              "text-gray-400 hover:text-[#5B1046] hover:bg-purple-50",
-                              "dark:hover:text-purple-400 dark:hover:bg-purple-900/20",
+                              "text-gray-400 hover:text-[#101010] hover:bg-yellow-500",
+                              "dark:hover:text-yellow-500 dark:hover:bg-yellow-500/20",
                               "transition-all"
                             )}
                             title="Undo this action"

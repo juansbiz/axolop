@@ -225,7 +225,7 @@ function ContextMenu({
               "rounded-lg overflow-hidden",
               // Dark mode
               "dark:bg-[#0a0a0a]/92 dark:backdrop-blur-2xl",
-              "dark:border-[#3F0D28]/30",
+              "dark:border-[#101010]/30",
               "dark:shadow-[0_10px_40px_rgba(0,0,0,0.4),0_0_40px_rgba(63,13,40,0.15)]",
               // Custom styles
               menuClassName,
@@ -280,7 +280,7 @@ function ContextMenu({
                       <div
                         key={`smart-header-${index}`}
                         role="presentation"
-                        className="px-3 py-1.5 text-xs font-semibold text-purple-600 dark:text-purple-400 uppercase tracking-wider flex items-center gap-1.5"
+                        className="px-3 py-1.5 text-xs font-semibold text-yellow-500 dark:text-yellow-500 uppercase tracking-wider flex items-center gap-1.5"
                       >
                         <Sparkles className="w-3 h-3" />
                         {item.label}
@@ -317,7 +317,7 @@ function ContextMenu({
                           "w-full px-3 py-2 text-left text-sm font-medium",
                           "flex items-center gap-3 transition-all duration-150",
                           "text-gray-700 hover:bg-gray-50/80 hover:text-gray-900",
-                          "dark:text-gray-200 dark:hover:bg-[#3F0D28]/15 dark:hover:text-white",
+                          "dark:text-gray-200 dark:hover:bg-[#101010]/15 dark:hover:text-white",
                           "focus:outline-none focus:ring-2 focus:ring-blue-500/50 focus:ring-inset",
                           item.disabled && "text-gray-400 dark:text-gray-600 cursor-not-allowed opacity-50",
                           "active:scale-[0.98]"
@@ -366,7 +366,7 @@ function ContextMenu({
                         // Default state
                         "text-gray-700 hover:bg-gray-50/80 hover:text-gray-900",
                         // Dark mode
-                        "dark:text-gray-200 dark:hover:bg-[#3F0D28]/15 dark:hover:text-white",
+                        "dark:text-gray-200 dark:hover:bg-[#101010]/15 dark:hover:text-white",
                         // Disabled state
                         isDisabled && "text-gray-400 dark:text-gray-600 cursor-not-allowed opacity-50",
                         // Destructive state
@@ -374,14 +374,14 @@ function ContextMenu({
                           !isDisabled &&
                           "text-red-600 hover:bg-red-50/80 hover:text-red-700 dark:text-red-400 dark:hover:bg-red-900/20 dark:hover:text-red-300",
                         // Smart action styling
-                        isSmartAction && "border-l-2 border-l-purple-500/60 dark:border-l-purple-400/60",
+                        isSmartAction && "border-l-2 border-l-yellow-500/60 dark:border-l-yellow-400/60",
                         // Active state
                         "active:scale-[0.98]",
                       )}
                     >
                       {/* Smart action sparkle icon */}
                       {isSmartAction && (
-                        <Sparkles className="h-3.5 w-3.5 flex-shrink-0 text-purple-500 dark:text-purple-400" />
+                        <Sparkles className="h-3.5 w-3.5 flex-shrink-0 text-yellow-500 dark:text-yellow-500" />
                       )}
                       {Icon && !isSmartAction && (
                         <Icon
@@ -406,7 +406,7 @@ function ContextMenu({
                       )}
                       {/* Smart action AI badge */}
                       {isSmartAction && (
-                        <span className="px-1.5 py-0.5 text-[10px] font-bold rounded bg-purple-100 text-purple-700 dark:bg-purple-900/40 dark:text-purple-300">
+                        <span className="px-1.5 py-0.5 text-[10px] font-bold rounded bg-yellow-500 text-yellow-500 dark:bg-yellow-500/20 dark:text-yellow-500">
                           AI
                         </span>
                       )}

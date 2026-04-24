@@ -94,7 +94,7 @@ export default function Login() {
                     name="email"
                     value={formData.email}
                     onChange={handleChange}
-                    className="w-full h-11 pl-10 pr-4 rounded-lg border border-gray-300 focus:ring-2 focus:ring-purple-500 focus:border-transparent"
+                    className="w-full h-11 pl-10 pr-4 rounded-lg border border-gray-300 focus:ring-2 focus:ring-yellow-500 focus:border-transparent"
                     placeholder="you@example.com"
                     required
                   />
@@ -112,7 +112,7 @@ export default function Login() {
                     name="password"
                     value={formData.password}
                     onChange={handleChange}
-                    className="w-full h-11 pl-10 pr-4 rounded-lg border border-gray-300 focus:ring-2 focus:ring-purple-500 focus:border-transparent"
+                    className="w-full h-11 pl-10 pr-4 rounded-lg border border-gray-300 focus:ring-2 focus:ring-yellow-500 focus:border-transparent"
                     placeholder="••••••••"
                     required
                   />
@@ -122,7 +122,7 @@ export default function Login() {
               <div className="flex items-center justify-end">
                 <Link
                   to="/forgot-password"
-                  className="text-sm text-purple-600 hover:text-purple-700"
+                  className="text-sm text-yellow-500 hover:text-yellow-500"
                 >
                   Forgot password?
                 </Link>
@@ -131,7 +131,7 @@ export default function Login() {
               <button
                 type="submit"
                 disabled={loading || authLoading}
-                className="w-full h-11 bg-purple-600 text-white font-medium rounded-lg hover:bg-purple-700 transition-colors disabled:opacity-50 flex items-center justify-center gap-2"
+                className="w-full h-11 bg-yellow-500 text-white font-medium rounded-lg hover:bg-yellow-500 transition-colors disabled:opacity-50 flex items-center justify-center gap-2"
               >
                 {loading && <Loader2 className="h-4 w-4 animate-spin" />}
                 Sign In
@@ -158,7 +158,7 @@ export default function Login() {
 
             <p className="mt-6 text-center text-sm text-gray-600">
               Don't have an account?{" "}
-              <Link to="/register" className="text-purple-600 hover:text-purple-700 font-medium">
+              <Link to="/register" className="text-yellow-500 hover:text-yellow-500 font-medium">
                 Sign up
               </Link>
             </p>
@@ -170,7 +170,7 @@ export default function Login() {
           <div className="h-full flex items-center justify-center">
             <div className="text-center text-white">
               <h2 className="text-4xl font-bold mb-4">Grow your brand with Axolop</h2>
-              <p className="text-purple-100 text-lg">The all-in-one platform for modern brands</p>
+              <p className="text-yellow-500 text-lg">The all-in-one platform for modern brands</p>
             </div>
           </div>
         </div>

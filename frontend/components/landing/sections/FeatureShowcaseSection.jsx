@@ -43,12 +43,12 @@ const colorStyles = {
     glow: "group-hover:shadow-[0_0_60px_rgba(59,130,246,0.3)]",
     border: "group-hover:border-blue-500/40",
   },
-  purple: {
-    gradient: "from-purple-500 to-pink-500",
-    iconBg: "bg-purple-500/30",
-    iconText: "text-purple-400",
+  yellow: {
+    gradient: "from-yellow-500 to-yellow-400",
+    iconBg: "bg-yellow-500/30",
+    iconText: "text-yellow-400",
     glow: "group-hover:shadow-[0_0_60px_rgba(168,85,247,0.3)]",
-    border: "group-hover:border-purple-500/40",
+    border: "group-hover:border-yellow-500/40",
   },
 };
 
@@ -290,7 +290,7 @@ const FeatureShowcaseSection = ({ className }) => {
       subtitle:
         "Task management, connect your own AI, or self-host for total control.",
       icon: Brain,
-      color: "purple",
+      color: "yellow",
       heroFeature: {
         title: "Connect Your Own AI",
         benefits: [

@@ -138,8 +138,8 @@ const AccordionSection = ({ title, icon: Icon, items, onItemClick }) => {
                       "px-1.5 py-0.5 text-[10px] font-bold rounded uppercase",
                       item.badge === "NEW" && "bg-green-500/20 text-green-400",
                       item.badge === "SOON" && "bg-blue-500/20 text-blue-400",
-                      item.badge === "PRO" && "bg-purple-500/20 text-purple-400",
-                      item.badge === "MVP" && "bg-[#E92C92]/20 text-[#E92C92]",
+                      item.badge === "PRO" && "bg-yellow-500/20 text-yellow-400",
+                      item.badge === "MVP" && "bg-[#f2ff00]/20 text-[#f2ff00]",
                       item.badge === "FREE" && "bg-teal-500/20 text-teal-400",
                     )}
                   >

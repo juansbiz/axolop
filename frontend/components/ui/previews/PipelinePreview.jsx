@@ -31,14 +31,14 @@ export default function PipelinePreview({ data, targetStage }) {
               <div
                 className={cn(
                   "h-2 w-full rounded-full transition-colors",
-                  isActive && "bg-gradient-to-r from-[#3F0D28] to-[#5B1046]",
+                  isActive && "bg-gradient-to-r from-[#101010] to-[#101010]",
                   isPast && "bg-green-400 dark:bg-green-600",
                   !isActive && !isPast && "bg-gray-200 dark:bg-gray-700"
                 )}
               />
               <span className={cn(
                 "text-[9px] font-medium truncate max-w-full",
-                isActive && "text-[#5B1046] dark:text-purple-400 font-bold",
+                isActive && "text-[#101010] dark:text-yellow-500 font-bold",
                 isPast && "text-green-600 dark:text-green-400",
                 !isActive && !isPast && "text-gray-400 dark:text-gray-500"
               )}>

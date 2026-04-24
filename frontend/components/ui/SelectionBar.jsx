@@ -44,15 +44,15 @@ export default function SelectionBar({
             "rounded-full",
             // Dark mode
             "dark:bg-[#0f0f0f]/95 dark:backdrop-blur-2xl",
-            "dark:border-[#3F0D28]/30",
+            "dark:border-[#101010]/30",
             "dark:shadow-[0_8px_40px_rgba(0,0,0,0.4)]"
           )}
         >
           {/* Selection count */}
           <div className={cn(
             "px-3 py-1.5 rounded-full text-sm font-semibold",
-            "bg-purple-100 text-purple-700",
-            "dark:bg-purple-900/30 dark:text-purple-300"
+            "bg-yellow-500 text-yellow-500",
+            "dark:bg-yellow-500/20 dark:text-yellow-500"
           )}>
             {count} {entityLabel}
           </div>

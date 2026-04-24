@@ -147,7 +147,7 @@ export default function MainLayout() {
                     />
                   </button>
                 ) : (
-                  <button className="h-8 w-8 rounded-full bg-purple-600 flex items-center justify-center text-white font-bold text-xs ring-2 ring-white/10 hover:ring-white/30 transition-all cursor-pointer">
+                  <button className="h-8 w-8 rounded-full bg-yellow-500 flex items-center justify-center text-white font-bold text-xs ring-2 ring-white/10 hover:ring-white/30 transition-all cursor-pointer">
                     {user?.user_metadata?.full_name
                       ?.split(" ")
                       .map((n) => n[0])

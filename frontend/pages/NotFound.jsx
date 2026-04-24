@@ -33,7 +33,7 @@ function NotFound() {
     <div className="flex h-screen items-center justify-center bg-gray-50">
       <div className="max-w-md w-full px-6 text-center">
         <div className="mb-8">
-          <div className="text-9xl font-bold text-purple-600 opacity-20">404</div>
+          <div className="text-9xl font-bold text-yellow-500 opacity-20">404</div>
         </div>
 
         <div className="mb-8">
@@ -48,8 +48,8 @@ function NotFound() {
           </p>
         </div>
 
-        <div className="mb-6 p-4 bg-purple-100 rounded-lg">
-          <p className="text-sm text-purple-700">
+        <div className="mb-6 p-4 bg-yellow-500 rounded-lg">
+          <p className="text-sm text-yellow-500">
             Redirecting to home in <span className="font-bold">{countdown}</span> seconds...
           </p>
         </div>
@@ -65,7 +65,7 @@ function NotFound() {
 
           <Link
             to="/"
-            className="flex items-center justify-center gap-2 px-6 py-3 bg-purple-600 hover:bg-purple-700 text-white rounded-lg transition-colors"
+            className="flex items-center justify-center gap-2 px-6 py-3 bg-yellow-500 hover:bg-yellow-500 text-white rounded-lg transition-colors"
           >
             <Home className="w-4 h-4" />
             Go to Home

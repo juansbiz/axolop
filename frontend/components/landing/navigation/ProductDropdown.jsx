@@ -123,7 +123,7 @@ const PRODUCT_CATEGORIES = {
     title: "Intelligence Space",
     subtitle: "AI & Task Management",
     icon: Brain,
-    color: "purple",
+    color: "yellow",
     items: [
       {
         name: "Boards",
@@ -176,10 +176,10 @@ const PRODUCT_CATEGORIES = {
 
 const colorStyles = {
   red: {
-    iconBg: "bg-[#E92C92]/20",
+    iconBg: "bg-[#f2ff00]/20",
     iconText: "text-gray-300",
-    hoverBg: "hover:bg-[#E92C92]/10",
-    gradientFrom: "from-[#E92C92]",
+    hoverBg: "hover:bg-[#f2ff00]/10",
+    gradientFrom: "from-[#f2ff00]",
     gradientTo: "to-[#0F0510]",
   },
   teal: {
@@ -189,11 +189,11 @@ const colorStyles = {
     gradientFrom: "from-[#14787b]",
     gradientTo: "to-[#1fb5b9]",
   },
-  purple: {
-    iconBg: "bg-purple-500/20",
-    iconText: "text-purple-400",
-    hoverBg: "hover:bg-purple-500/10",
-    gradientFrom: "from-purple-500",
+  yellow: {
+    iconBg: "bg-yellow-500/20",
+    iconText: "text-yellow-400",
+    hoverBg: "hover:bg-yellow-500/10",
+    gradientFrom: "from-yellow-500",
     gradientTo: "to-pink-500",
   },
 };
@@ -328,7 +328,7 @@ const ProductDropdown = ({
                                         item.badge === "SOON" &&
                                           "bg-blue-500/20 text-blue-400",
                                         item.badge === "PRO" &&
-                                          "bg-purple-500/20 text-purple-400",
+                                          "bg-yellow-500/20 text-yellow-500",
                                       )}
                                     >
                                       {item.badge}

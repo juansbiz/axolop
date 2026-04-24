@@ -62,7 +62,7 @@ function HeroSection() {
                 className="relative overflow-hidden px-10 py-5 rounded-full leading-none flex items-center transition transform group-hover:-translate-y-1 active:translate-y-0 active:scale-95"
                 style={{
                   background:
-                    "linear-gradient(180deg, #ff85c8 0%, #E92C92 30%, #c41e78 70%, #ff69b4 100%)",
+                    "linear-gradient(180deg, #ff85c8 0%, #f2ff00 30%, #c41e78 70%, #ff69b4 100%)",
                   boxShadow:
                     "inset 0 2px 4px rgba(255,255,255,0.6), inset 0 -2px 4px rgba(0,0,0,0.2), 0 10px 40px rgba(233,44,146,0.5), 0 2px 8px rgba(0,0,0,0.3)",
                   border: "1px solid rgba(255,255,255,0.3)",
@@ -138,7 +138,7 @@ function HeroSection() {
 
           <div className="flex items-center justify-center gap-3 text-xs font-bold text-gray-500 uppercase tracking-widest opacity-80">
             <span>Free forever</span>
-            <span className="text-[#E92C92]">•</span>
+            <span className="text-[#f2ff00]">•</span>
             <span>Self-host or cloud</span>
           </div>
         </div>
@@ -169,8 +169,8 @@ export default function Landing() {
                 <div className="relative w-full" style={{ aspectRatio: "16/9" }}>
                   <div className="absolute inset-0 flex items-center justify-center bg-gradient-to-br from-[#1a1a2e] to-[#0F0510]">
                     <div className="text-center">
-                      <div className="w-20 h-20 mx-auto mb-4 rounded-full bg-[#E92C92]/20 flex items-center justify-center">
-                        <svg className="w-10 h-10 text-[#E92C92]" fill="currentColor" viewBox="0 0 24 24">
+                      <div className="w-20 h-20 mx-auto mb-4 rounded-full bg-[#f2ff00]/20 flex items-center justify-center">
+                        <svg className="w-10 h-10 text-[#f2ff00]" fill="currentColor" viewBox="0 0 24 24">
                           <path d="M8 5v14l11-7z"/>
                         </svg>
                       </div>

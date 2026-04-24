@@ -251,7 +251,7 @@ export function ContextMenuTest() {
             {...largeMenu}
             className={cn(
               'p-6 border-2 border-dashed border-gray-300 rounded-lg',
-              'hover:border-purple-500 hover:bg-purple-50',
+              'hover:border-yellow-500 hover:bg-yellow-500',
               'cursor-pointer transition-all'
             )}
           >

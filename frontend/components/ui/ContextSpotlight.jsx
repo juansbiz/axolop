@@ -81,8 +81,8 @@ export default function ContextSpotlight() {
       }
 
       items.forEach((item, i) => {
-        item.classList.toggle('bg-purple-50', i === selectedIndexRef.current);
-        item.classList.toggle('dark:bg-purple-900/20', i === selectedIndexRef.current);
+        item.classList.toggle('bg-yellow-500', i === selectedIndexRef.current);
+        item.classList.toggle('dark:bg-yellow-500/20', i === selectedIndexRef.current);
       });
       items[selectedIndexRef.current]?.scrollIntoView({ block: 'nearest' });
     }
@@ -128,14 +128,14 @@ export default function ContextSpotlight() {
               "rounded-xl overflow-hidden",
               // Dark mode
               "dark:bg-[#0f0f0f]/98 dark:backdrop-blur-2xl",
-              "dark:border-[#3F0D28]/30",
+              "dark:border-[#101010]/30",
               "dark:shadow-[0_20px_60px_rgba(0,0,0,0.5)]"
             )}
           >
             {/* Search Input */}
             <div className="flex items-center gap-3 px-4 py-3 border-b border-gray-200/60 dark:border-gray-800">
               {isCommandMode ? (
-                <Command className="w-5 h-5 text-purple-500 dark:text-purple-400 flex-shrink-0" />
+                <Command className="w-5 h-5 text-yellow-500 dark:text-yellow-500 flex-shrink-0" />
               ) : (
                 <Search className="w-5 h-5 text-gray-400 dark:text-gray-500 flex-shrink-0" />
               )}
@@ -160,14 +160,14 @@ export default function ContextSpotlight() {
 
             {/* Context Badge */}
             {contextLabel && (
-              <div className="px-4 py-2 bg-purple-50/50 dark:bg-purple-900/10 border-b border-gray-200/60 dark:border-gray-800">
+              <div className="px-4 py-2 bg-yellow-500/20 dark:bg-yellow-500/20 border-b border-gray-200/60 dark:border-gray-800">
                 <div className="flex items-center gap-2 text-xs">
-                  <Zap className="w-3 h-3 text-purple-500 dark:text-purple-400" />
-                  <span className="text-purple-600 dark:text-purple-400 font-medium">
+                  <Zap className="w-3 h-3 text-yellow-500 dark:text-yellow-500" />
+                  <span className="text-yellow-500 dark:text-yellow-500 font-medium">
                     Context: {contextLabel}
                   </span>
                   {hoveredEntity?.data?.name && (
-                    <span className="text-purple-400 dark:text-purple-500">
+                    <span className="text-yellow-500 dark:text-yellow-500">
                       - {hoveredEntity.data.name || hoveredEntity.data.title}
                     </span>
                   )}
@@ -182,7 +182,7 @@ export default function ContextSpotlight() {
                 className={cn(
                   "flex-1 px-4 py-2 text-xs font-semibold uppercase tracking-wider transition-colors",
                   activeSection === 'actions'
-                    ? "text-purple-600 dark:text-purple-400 border-b-2 border-purple-500 dark:border-purple-400"
+                    ? "text-yellow-500 dark:text-yellow-500 border-b-2 border-yellow-500 dark:border-yellow-500"
                     : "text-gray-400 dark:text-gray-500 hover:text-gray-600 dark:hover:text-gray-400"
                 )}
               >
@@ -193,7 +193,7 @@ export default function ContextSpotlight() {
                 className={cn(
                   "flex-1 px-4 py-2 text-xs font-semibold uppercase tracking-wider transition-colors",
                   activeSection === 'search'
-                    ? "text-purple-600 dark:text-purple-400 border-b-2 border-purple-500 dark:border-purple-400"
+                    ? "text-yellow-500 dark:text-yellow-500 border-b-2 border-yellow-500 dark:border-yellow-500"
                     : "text-gray-400 dark:text-gray-500 hover:text-gray-600 dark:hover:text-gray-400"
                 )}
               >

@@ -36,7 +36,7 @@ export default function BrandSelector() {
         onClick={() => setIsOpen(!isOpen)}
         className="flex items-center gap-2 px-3 py-1.5 rounded-lg hover:bg-gray-100 transition-colors"
       >
-        <div className="w-8 h-8 rounded-lg bg-gradient-to-br from-[#E92C92] to-[#C81E78] flex items-center justify-center">
+        <div className="w-8 h-8 rounded-lg bg-gradient-to-br from-[#f2ff00] to-[#f2ff00] flex items-center justify-center">
           <Store className="h-4 w-4 text-white" />
         </div>
         <span className="text-sm font-medium text-gray-900">{currentBrand?.name}</span>
@@ -56,11 +56,11 @@ export default function BrandSelector() {
                 onClick={() => handleBrandSelect(b)}
                 className={`
                   w-full flex items-center gap-3 px-3 py-2 hover:bg-gray-50 transition-colors text-left
-                  ${b.id === currentBrand?.id ? "bg-purple-50" : ""}
+                  ${b.id === currentBrand?.id ? "bg-yellow-50" : ""}
                 `}
               >
-                <div className="w-8 h-8 rounded-lg bg-purple-100 flex items-center justify-center">
-                  <Store className="h-4 w-4 text-purple-600" />
+                <div className="w-8 h-8 rounded-lg bg-yellow-500 flex items-center justify-center">
+                  <Store className="h-4 w-4 text-yellow-500" />
                 </div>
                 <div className="flex-1 min-w-0">
                   <p className="text-sm font-medium text-gray-900 truncate">{b.name}</p>
@@ -72,8 +72,8 @@ export default function BrandSelector() {
 
           <div className="border-t border-gray-100 p-2">
             <button className="w-full flex items-center gap-2 px-3 py-2 hover:bg-gray-50 transition-colors text-left rounded-lg">
-              <Plus className="h-4 w-4 text-[#E92C92]" />
-              <span className="text-sm text-[#E92C92] font-medium">Add New Brand</span>
+              <Plus className="h-4 w-4 text-[#f2ff00]" />
+              <span className="text-sm text-[#f2ff00] font-medium">Add New Brand</span>
             </button>
           </div>
         </div>

@@ -32,7 +32,7 @@ const recentOrders = [
 ];
 
 const quickActions = [
-  { label: "New Order", icon: Plus, color: "bg-purple-600" },
+  { label: "New Order", icon: Plus, color: "bg-yellow-500" },
   { label: "Add Customer", icon: Users, color: "bg-blue-600" },
   { label: "Send Email", icon: Mail, color: "bg-green-600" },
   { label: "Create Report", icon: FileText, color: "bg-orange-600" },
@@ -60,8 +60,8 @@ export default function Home() {
         {stats.map((stat, index) => (
           <div key={index} className="bg-white rounded-xl p-5 shadow-sm border border-gray-100">
             <div className="flex items-center justify-between mb-3">
-              <div className="p-2 bg-purple-100 rounded-lg">
-                <stat.icon className="h-5 w-5 text-purple-600" />
+              <div className="p-2 bg-yellow-500 rounded-lg">
+                <stat.icon className="h-5 w-5 text-yellow-500" />
               </div>
               <span className={`text-sm font-medium ${stat.positive ? 'text-green-600' : 'text-red-600'}`}>
                 {stat.change}
@@ -80,7 +80,7 @@ export default function Home() {
           {quickActions.map((action, index) => (
             <button
               key={index}
-              className="flex items-center gap-3 p-4 bg-white rounded-xl shadow-sm border border-gray-100 hover:shadow-md hover:border-purple-200 transition-all group"
+              className="flex items-center gap-3 p-4 bg-white rounded-xl shadow-sm border border-gray-100 hover:shadow-md hover:border-yellow-500 transition-all group"
             >
               <div className={`p-2 rounded-lg ${action.color} group-hover:scale-110 transition-transform`}>
                 <action.icon className="h-4 w-4 text-white" />
@@ -97,7 +97,7 @@ export default function Home() {
         <div className="lg:col-span-2 bg-white rounded-xl shadow-sm border border-gray-100">
           <div className="flex items-center justify-between p-5 border-b border-gray-100">
             <h2 className="text-lg font-semibold text-gray-900">Recent Orders</h2>
-            <button className="text-sm text-purple-600 hover:text-purple-700 font-medium">
+            <button className="text-sm text-yellow-500 hover:text-yellow-500 font-medium">
               View All
             </button>
           </div>
@@ -142,7 +142,7 @@ export default function Home() {
             {[
               { icon: Users, text: "New customer registered", time: "5 min ago", color: "bg-blue-500" },
               { icon: ShoppingCart, text: "Order #1234 completed", time: "12 min ago", color: "bg-green-500" },
-              { icon: Mail, text: "Email campaign sent", time: "1 hour ago", color: "bg-purple-500" },
+              { icon: Mail, text: "Email campaign sent", time: "1 hour ago", color: "bg-yellow-500" },
               { icon: Activity, text: "New lead from website", time: "2 hours ago", color: "bg-orange-500" },
             ].map((activity, index) => (
               <div key={index} className="flex items-start gap-3">
@@ -169,7 +169,7 @@ export default function Home() {
                 key={period}
                 className={`px-3 py-1 text-sm rounded-lg ${
                   period === '30D' 
-                    ? 'bg-purple-600 text-white' 
+                    ? 'bg-yellow-500 text-white' 
                     : 'text-gray-600 hover:bg-gray-100'
                 }`}
               >
@@ -182,7 +182,7 @@ export default function Home() {
           {[35, 45, 30, 55, 70, 65, 80, 75, 90, 85, 95, 100].map((height, i) => (
             <div key={i} className="flex-1 flex flex-col items-center gap-2">
               <div 
-                className="w-full bg-purple-200 rounded-t hover:bg-purple-300 transition-colors"
+                className="w-full bg-yellow-500 rounded-t hover:bg-yellow-500 transition-colors"
                 style={{ height: `${height}%` }}
               />
               <span className="text-xs text-gray-400">

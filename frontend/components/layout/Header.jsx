@@ -38,7 +38,7 @@ export default function Header() {
           <input
             type="text"
             placeholder="Search..."
-            className="w-full h-9 pl-9 pr-4 rounded-lg border border-gray-200 bg-gray-50 text-sm focus:outline-none focus:ring-2 focus:ring-purple-500 focus:bg-white transition-colors"
+            className="w-full h-9 pl-9 pr-4 rounded-lg border border-gray-200 bg-gray-50 text-sm focus:outline-none focus:ring-2 focus:ring-yellow-500 focus:bg-white transition-colors"
           />
         </div>
       </div>
@@ -51,8 +51,8 @@ export default function Header() {
             onClick={() => setIsBrandOpen(!isBrandOpen)}
             className="flex items-center gap-2 px-3 py-1.5 rounded-lg hover:bg-gray-100 transition-colors"
           >
-            <div className="w-6 h-6 rounded bg-purple-100 flex items-center justify-center">
-              <Store className="h-3.5 w-3.5 text-purple-600" />
+            <div className="w-6 h-6 rounded bg-yellow-500 flex items-center justify-center">
+              <Store className="h-3.5 w-3.5 text-yellow-500" />
             </div>
             <span className="text-sm font-medium text-gray-700">{currentBrand?.name}</span>
             <ChevronDown className="h-4 w-4 text-gray-400" />
@@ -70,7 +70,7 @@ export default function Header() {
                 </button>
               ))}
               <button className="w-full flex items-center gap-2 px-3 py-2 hover:bg-gray-50 transition-colors text-left border-t border-gray-100">
-                <span className="text-sm text-purple-600">+ Add Brand</span>
+                <span className="text-sm text-yellow-500">+ Add Brand</span>
               </button>
             </div>
           )}
@@ -88,7 +88,7 @@ export default function Header() {
               onClick={() => setIsUserMenuOpen(!isUserMenuOpen)}
               className="flex items-center gap-2 px-2 py-1.5 rounded-lg hover:bg-gray-100 transition-colors"
             >
-              <div className="w-8 h-8 rounded-full bg-purple-600 flex items-center justify-center">
+              <div className="w-8 h-8 rounded-full bg-yellow-500 flex items-center justify-center">
                 <User className="h-4 w-4 text-white" />
               </div>
             </button>
@@ -111,7 +111,7 @@ export default function Header() {
         ) : (
           <Link
             to="/login"
-            className="px-4 py-2 bg-purple-600 text-white text-sm font-medium rounded-lg hover:bg-purple-700 transition-colors"
+            className="px-4 py-2 bg-yellow-500 text-white text-sm font-medium rounded-lg hover:bg-yellow-500 transition-colors"
           >
             Sign In
           </Link>
