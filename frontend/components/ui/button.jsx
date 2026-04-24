@@ -5,7 +5,7 @@ import { cn } from "@/lib/utils";
 
 // Export variants for use in other components
 export const buttonVariants = cva(
-  "inline-flex items-center justify-center whitespace-nowrap text-sm font-medium ring-offset-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#3F0D28]/20 focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 disabled:cursor-not-allowed transition-all duration-200 ease-out",
+  "inline-flex items-center justify-center whitespace-nowrap text-sm font-medium ring-offset-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#101010]/20 focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 disabled:cursor-not-allowed transition-all duration-200 ease-out",
   {
     variants: {
       variant: {
@@ -20,19 +20,19 @@ export const buttonVariants = cva(
         accent:
           "btn-premium-red text-white hover:scale-[1.01] active:scale-[0.99] font-semibold tracking-tight",
         "accent-subtle":
-          "bg-[#3F0D28]/15 text-[#3F0D28] hover:bg-[#3F0D28]/25 hover:scale-[1.01] active:scale-[0.99]",
+          "bg-[#101010]/15 text-[#101010] hover:bg-[#101010]/25 hover:scale-[1.01] active:scale-[0.99]",
         "accent-gradient":
-          "bg-gradient-to-r from-[#140516] via-[#3F0D28] to-[#140516] text-white hover:shadow-2xl hover:scale-[1.01] active:scale-[0.99] font-semibold tracking-tight",
-        blue: "bg-gradient-to-r from-[#3F0D28] to-[#5C1741] text-white shadow-lg hover:shadow-xl hover:scale-[1.01] active:scale-[0.99] font-semibold",
+          "bg-gradient-to-r from-[#101010] via-[#101010] to-[#101010] text-white hover:shadow-2xl hover:scale-[1.01] active:scale-[0.99] font-semibold tracking-tight",
+        blue: "bg-gradient-to-r from-[#101010] to-[#303030] text-white shadow-lg hover:shadow-xl hover:scale-[1.01] active:scale-[0.99] font-semibold",
         outline:
           "bg-gray-50 shadow-sm hover:bg-gray-100 hover:shadow-md hover:scale-[1.01] active:scale-[0.99] font-medium",
         ghost:
           "hover:bg-neutral-100 hover:text-neutral-900 hover:scale-[1.01] active:scale-[0.99] transition-all duration-200",
-        link: "text-[#3F0D28] underline-offset-4 hover:underline transition-all duration-200",
-        "metallic-plum":
-          "btn-metallic-plum text-white hover:scale-[1.01] active:scale-[0.99] font-semibold tracking-tight",
+        link: "text-[#101010] underline-offset-4 hover:underline transition-all duration-200",
+        "metallic-black":
+          "bg-gradient-to-r from-[#101010] to-[#303030] text-white hover:scale-[1.01] active:scale-[0.99] font-semibold tracking-tight",
         "metallic-white":
-          "btn-metallic-white text-[#3F0D28] hover:scale-[1.01] active:scale-[0.99] font-semibold tracking-tight",
+          "btn-metallic-white text-[#101010] hover:scale-[1.01] active:scale-[0.99] font-semibold tracking-tight",
       },
       size: {
         default: "h-10 px-6 py-3 rounded-lg text-base",

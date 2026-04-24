@@ -39,7 +39,7 @@ const Slider = React.forwardRef(({
           "[&::-webkit-slider-thumb]:w-5",
           "[&::-webkit-slider-thumb]:h-5",
           "[&::-webkit-slider-thumb]:rounded-full",
-          "[&::-webkit-slider-thumb]:bg-[#3F0D28]",
+          "[&::-webkit-slider-thumb]:bg-[#101010]",
           "[&::-webkit-slider-thumb]:cursor-pointer",
           "[&::-webkit-slider-thumb]:border-2",
           "[&::-webkit-slider-thumb]:border-white",
@@ -49,14 +49,14 @@ const Slider = React.forwardRef(({
           "[&::-moz-range-thumb]:w-5",
           "[&::-moz-range-thumb]:h-5",
           "[&::-moz-range-thumb]:rounded-full",
-          "[&::-moz-range-thumb]:bg-[#3F0D28]",
+          "[&::-moz-range-thumb]:bg-[#101010]",
           "[&::-moz-range-thumb]:cursor-pointer",
           "[&::-moz-range-thumb]:border-2",
           "[&::-moz-range-thumb]:border-white",
           "[&::-moz-range-thumb]:shadow-md"
         )}
         style={{
-          background: `linear-gradient(to right, #3F0D28 0%, #3F0D28 ${percentage}%, #e5e7eb ${percentage}%, #e5e7eb 100%)`
+          background: `linear-gradient(to right, #101010 0%, #101010 ${percentage}%, #e5e7eb ${percentage}%, #e5e7eb 100%)`
         }}
         {...props}
       />

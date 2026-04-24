@@ -16,18 +16,18 @@ import {
 
 const colorStyles = {
   red: {
-    gradient: "from-[#E92C92] to-[#5B1046]",
-    iconBg: "bg-[#E92C92]/30",
+    gradient: "from-[#f2ff00] to-[#101010]",
+    iconBg: "bg-[#f2ff00]/30",
     iconText: "text-gray-300",
     glow: "group-hover:shadow-[0_0_60px_rgba(233,44,146,0.3)]",
-    border: "group-hover:border-[#E92C92]/40",
+    border: "group-hover:border-[#f2ff00]/40",
   },
   teal: {
-    gradient: "from-[#E92C92] to-[#C81E78]",
-    iconBg: "bg-[#E92C92]/30",
-    iconText: "text-[#E92C92]",
+    gradient: "from-[#f2ff00] to-[#f2ff00]",
+    iconBg: "bg-[#f2ff00]/30",
+    iconText: "text-[#f2ff00]",
     glow: "group-hover:shadow-[0_0_60px_rgba(233,44,146,0.3)]",
-    border: "group-hover:border-[#E92C92]/40",
+    border: "group-hover:border-[#f2ff00]/40",
   },
   amber: {
     gradient: "from-amber-500 to-yellow-500",
@@ -323,7 +323,7 @@ const FeatureShowcaseSection = ({ className }) => {
       <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section header */}
         <div className="text-center mb-16">
-          <p className="text-[#E92C92] font-semibold mb-3 tracking-wide uppercase text-sm">
+          <p className="text-[#f2ff00] font-semibold mb-3 tracking-wide uppercase text-sm">
             3 Powerful Spaces
           </p>
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-4">
@@ -361,7 +361,7 @@ const FeatureShowcaseSection = ({ className }) => {
               className="relative overflow-hidden px-8 py-4 rounded-full inline-flex items-center gap-2"
               style={{
                 background:
-                  "linear-gradient(180deg, #ff85c8 0%, #E92C92 30%, #c41e78 70%, #ff69b4 100%)",
+                  "linear-gradient(180deg, #f2ff00 0%, #f2ff00 30%, #f2ff00 70%, #f2ff00 100%)",
                 boxShadow:
                   "inset 0 2px 4px rgba(255,255,255,0.6), inset 0 -2px 4px rgba(0,0,0,0.2), 0 2px 8px rgba(0,0,0,0.3)",
                 border: "1px solid rgba(255,255,255,0.3)",

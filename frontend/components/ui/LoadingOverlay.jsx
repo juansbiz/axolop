@@ -68,12 +68,12 @@ export function LoadingOverlay({
                     repeat: Infinity,
                     ease: 'easeInOut',
                   }}
-                  className="absolute inset-0 bg-[#3F0D28]/20 dark:bg-[#7A3D5C]/30 rounded-full blur-xl"
+                  className="absolute inset-0 bg-[#101010]/20 dark:bg-[#f2ff00]/30 rounded-full blur-xl"
                 />
 
                 {/* Spinner */}
                 <Loader2
-                  className="h-12 w-12 text-[#3F0D28] dark:text-[#7A3D5C] animate-spin relative z-10"
+                  className="h-12 w-12 text-[#101010] dark:text-[#f2ff00] animate-spin relative z-10"
                   strokeWidth={2.5}
                 />
               </div>
@@ -124,7 +124,7 @@ export function InlineLoader({
   };
 
   const colorClasses = {
-    primary: 'text-[#3F0D28] dark:text-[#7A3D5C]',
+    primary: 'text-[#101010] dark:text-[#f2ff00]',
     white: 'text-white',
     gray: 'text-gray-500',
   };
@@ -172,12 +172,12 @@ export function FullPageLoader({
               repeat: Infinity,
               ease: 'easeInOut',
             }}
-            className="absolute inset-0 bg-[#3F0D28]/20 dark:bg-[#7A3D5C]/30 rounded-full blur-2xl"
+            className="absolute inset-0 bg-[#101010]/20 dark:bg-[#f2ff00]/30 rounded-full blur-2xl"
           />
 
           {/* Spinner */}
           <Loader2
-            className="h-16 w-16 text-[#3F0D28] dark:text-[#7A3D5C] animate-spin relative mx-auto"
+            className="h-16 w-16 text-[#101010] dark:text-[#f2ff00] animate-spin relative mx-auto"
             strokeWidth={2}
           />
         </div>

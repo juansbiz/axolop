@@ -214,7 +214,7 @@ const AuthenticatedUserMenu = ({ user }) => {
           className="relative overflow-hidden px-5 py-2 rounded-full leading-none flex items-center gap-2 transition transform group-hover:-translate-y-0.5 active:scale-95"
           style={{
             background:
-              "linear-gradient(180deg, #ff85c8 0%, #E92C92 30%, #c41e78 70%, #ff69b4 100%)",
+              "linear-gradient(180deg, #f2ff00 0%, #f2ff00 30%, #f2ff00 70%, #f2ff00 100%)",
             boxShadow:
               "inset 0 2px 3px rgba(255,255,255,0.5), inset 0 -2px 3px rgba(0,0,0,0.15), 0 6px 20px rgba(233,44,146,0.4), 0 2px 6px rgba(0,0,0,0.2)",
             border: "1px solid rgba(255,255,255,0.3)",

@@ -122,7 +122,7 @@ export function ContextMenuSearch({ items, onFilter }) {
             // Dark mode
             "dark:bg-gray-800 dark:border-gray-700 dark:text-gray-200",
             "dark:placeholder:text-gray-500",
-            "dark:focus:ring-[#3F0D28]/50 dark:focus:border-[#3F0D28]/60"
+            "dark:focus:ring-[#101010]/50 dark:focus:border-[#101010]/60"
           )}
         />
         {query && (

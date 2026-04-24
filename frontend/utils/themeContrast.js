@@ -92,7 +92,7 @@ export function withOpacity(hexColor, opacity) {
  * @param {string} accentColor - Theme accent color
  * @returns {object} Style object for input fields
  */
-export function getInputStyles(backgroundColor, accentColor = '#3F0D28') {
+export function getInputStyles(backgroundColor, accentColor = '#101010') {
   const isDark = isDarkBackground(backgroundColor);
   return {
     backgroundColor: isDark ? 'rgba(255,255,255,0.1)' : '#FFFFFF',
@@ -110,7 +110,7 @@ export function getInputStyles(backgroundColor, accentColor = '#3F0D28') {
  * @param {string} accentColor - Theme accent color for selected state
  * @returns {string} Appropriate border color
  */
-export function getBorderColor(backgroundColor, isSelected = false, accentColor = '#3F0D28') {
+export function getBorderColor(backgroundColor, isSelected = false, accentColor = '#101010') {
   if (isSelected) return accentColor;
   const isDark = isDarkBackground(backgroundColor);
   return isDark ? 'rgba(255,255,255,0.2)' : '#E5E7EB';

@@ -13,12 +13,12 @@ const iconMap = {
 
 const colorStyles = {
   red: {
-    gradient: "from-[#E92C92]/20 to-[#E92C92]/10",
-    border: "border-[#E92C92]/30",
-    iconBg: "bg-[#E92C92]/30",
-    iconText: "text-[#E92C92]",
-    badgeBg: "bg-[#E92C92]/20",
-    badgeText: "text-[#E92C92]",
+    gradient: "from-[#f2ff00]/20 to-[#f2ff00]/10",
+    border: "border-[#f2ff00]/30",
+    iconBg: "bg-[#f2ff00]/30",
+    iconText: "text-[#f2ff00]",
+    badgeBg: "bg-[#f2ff00]/20",
+    badgeText: "text-[#f2ff00]",
   },
   teal: {
     gradient: "from-[#14787b]/20 to-[#1fb5b9]/10",

@@ -30,7 +30,7 @@ export default function Sidebar({ isSidebarCollapsed, onMouseEnter, onMouseLeave
           ${isMobileMenuOpen ? "translate-x-0" : "-translate-x-full lg:translate-x-0"}
         `}
         style={{
-          background: "linear-gradient(180deg, #0a0a0a 0%, #1a0812 30%, #3F0D28 50%, #1a0812 70%, #0a0a0a 100%)",
+          background: "linear-gradient(180deg, #0a0a0a 0%, #1a1a1a 30%, #101010 50%, #1a1a1a 70%, #0a0a0a 100%)",
         }}
         onMouseEnter={onMouseEnter}
         onMouseLeave={onMouseLeave}

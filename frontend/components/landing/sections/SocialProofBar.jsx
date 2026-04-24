@@ -45,7 +45,7 @@ const SocialProofBar = ({ className }) => {
             {[1, 2, 3, 4, 5].map((i) => (
               <div
                 key={i}
-                className="w-8 h-8 rounded-full bg-gradient-to-br from-[#E92C92] to-[#C81E78] border-2 border-[#0F0510] flex items-center justify-center text-xs font-bold text-white"
+                className="w-8 h-8 rounded-full bg-gradient-to-br from-[#f2ff00] to-[#f2ff00] border-2 border-[#0F0510] flex items-center justify-center text-xs font-bold text-white"
               >
                 {String.fromCharCode(64 + i)}
               </div>

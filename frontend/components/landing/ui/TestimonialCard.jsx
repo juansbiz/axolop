@@ -98,7 +98,7 @@ const TestimonialCard = ({
 
         {/* Quote icon */}
         {!hasVideo && (
-          <Quote className="w-8 h-8 text-[#E92C92]/30 mb-4" />
+          <Quote className="w-8 h-8 text-[#f2ff00]/30 mb-4" />
         )}
 
         {/* Quote text */}

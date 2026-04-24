@@ -33,10 +33,10 @@ const StatCard = React.forwardRef(({
       hover: 'group-hover:bg-amber-200 dark:group-hover:bg-amber-900'
     },
     accent: {
-      bg: 'bg-[#3F0D28]/10 dark:bg-[#CBA6F7]/20',
-      text: 'text-[#3F0D28] dark:text-gray-300',
-      border: 'border-[#3F0D28]/20 dark:border-[#3F0D28]/40',
-      hover: 'group-hover:bg-[#3F0D28]/15 dark:group-hover:bg-[#3F0D28]/30'
+      bg: 'bg-[#101010]/10 dark:bg-[#f2ff00]/20',
+      text: 'text-[#101010] dark:text-gray-300',
+      border: 'border-[#101010]/20 dark:border-[#101010]/40',
+      hover: 'group-hover:bg-[#101010]/15 dark:group-hover:bg-[#101010]/30'
     },
     gray: {
       bg: 'bg-gray-100 dark:bg-gray-800',
@@ -102,7 +102,7 @@ const StatCard = React.forwardRef(({
       <div className="flex items-baseline justify-between">
         <div className={cn(
           "text-3xl font-bold text-gray-900 dark:text-white transition-colors duration-300",
-          color === 'accent' && "group-hover:text-[#3F0D28]"
+          color === 'accent' && "group-hover:text-[#101010]"
         )}>
           {value}
         </div>

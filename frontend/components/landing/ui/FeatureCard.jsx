@@ -27,11 +27,11 @@ const FeatureCard = ({
   const cardRef = useRef(null);
   const colorStyles = {
     red: {
-      gradient: 'from-[#E92C92] to-[#140516]',
+      gradient: 'from-[#f2ff00] to-[#101010]',
       glow: 'hover:shadow-[0_0_40px_rgba(233,44,146,0.4)]',
-      iconBg: 'bg-[#E92C92]/20',
+      iconBg: 'bg-[#f2ff00]/20',
       iconText: 'text-gray-300',
-      border: 'hover:border-[#E92C92]/50',
+      border: 'hover:border-[#f2ff00]/50',
     },
     teal: {
       gradient: 'from-[#14787b] to-[#1fb5b9]',
@@ -220,7 +220,7 @@ const FeatureCardCompact = ({
 }) => {
   const colorStyles = {
     red: {
-      iconBg: 'bg-[#E92C92]/20',
+      iconBg: 'bg-[#f2ff00]/20',
       iconText: 'text-gray-300',
     },
     teal: {

@@ -78,7 +78,7 @@ export function ContextMenuPreview({ preview, triggerRef, isVisible }) {
             "rounded-lg overflow-hidden",
             // Dark mode
             "dark:bg-[#0a0a0a]/95 dark:backdrop-blur-2xl",
-            "dark:border-[#3F0D28]/20",
+            "dark:border-[#101010]/20",
             "dark:shadow-[0_8px_30px_rgba(0,0,0,0.3)]"
           )}
           style={{

@@ -293,7 +293,7 @@ export function ContextMenuTest() {
             {...longPress}
             className={cn(
               'p-6 border-2 border-dashed border-gray-300 rounded-lg',
-              'hover:border-pink-500 hover:bg-pink-50',
+              'hover:border-yellow-500 hover:bg-yellow-50',
               'cursor-pointer transition-all',
               longPress.isPressed && 'scale-95 opacity-80'
             )}

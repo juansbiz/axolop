@@ -88,7 +88,7 @@ export default function SimplifiedSidebar({ isSidebarCollapsed, onMouseEnter, on
           ${isMobileMenuOpen ? "translate-x-0" : "-translate-x-full lg:translate-x-0"}
         `}
         style={{
-          background: "linear-gradient(180deg, #0a0a0a 0%, #1a0812 30%, #3F0D28 50%, #1a0812 70%, #0a0a0a 100%)",
+          background: "linear-gradient(180deg, #0a0a0a 0%, #1a1a1a 30%, #101010 50%, #1a1a1a 70%, #0a0a0a 100%)",
           transition: "width 400ms cubic-bezier(0.4, 0, 0.2, 1)",
           willChange: "width",
           transform: "translateZ(0)",
@@ -180,7 +180,7 @@ export default function SimplifiedSidebar({ isSidebarCollapsed, onMouseEnter, on
                 {/* Brand Button */}
                 <button
                   onClick={() => setIsBrandOpen(!isBrandOpen)}
-                  className="flex items-center justify-between cursor-pointer rounded-lg transition-all duration-300 ease-out overflow-hidden bg-gradient-to-r from-[#2a0919]/80 via-[#3F0D28]/80 to-[#2a0919]/80 hover:from-[#3F0D28]/90 hover:via-[#5a1a3a]/90 hover:to-[#3F0D28]/90 hover:border-[#3F0D28]/50 flex-1 shadow-lg hover:shadow-xl hover:shadow-[#3F0D28]/20 backdrop-blur-sm"
+                  className="flex items-center justify-between cursor-pointer rounded-lg transition-all duration-300 ease-out overflow-hidden bg-gradient-to-r from-[#1a1a1a]/80 via-[#101010]/80 to-[#1a1a1a]/80 hover:from-[#101010]/90 hover:via-[#101010]/90 hover:to-[#101010]/90 hover:border-[#101010]/50 flex-1 shadow-lg hover:shadow-xl hover:shadow-[#101010]/20 backdrop-blur-sm"
                 >
                   <div className="flex items-center flex-1 px-2 py-1.5">
                     {currentBrand?.logo_url ? (
@@ -190,7 +190,7 @@ export default function SimplifiedSidebar({ isSidebarCollapsed, onMouseEnter, on
                         className="h-5 w-5 rounded mr-2 object-cover ring-1 ring-white/20"
                       />
                     ) : (
-                      <div className="p-1 rounded mr-2 bg-gradient-to-br from-[#3F0D28] to-[#5a1a3a] shadow-inner">
+                      <div className="p-1 rounded mr-2 bg-gradient-to-br from-[#101010] to-[#101010] shadow-inner">
                         <Building2 className="h-4 w-4 text-white" />
                       </div>
                     )}
@@ -204,7 +204,7 @@ export default function SimplifiedSidebar({ isSidebarCollapsed, onMouseEnter, on
                 {/* Add Brand Button */}
                 <button
                   onClick={() => setShowPlusMenu(!showPlusMenu)}
-                  className="p-2 rounded-lg transition-all duration-300 flex items-center justify-center bg-gradient-to-br from-[#3F0D28] to-[#5a1a3a] hover:from-[#5a1a3a] hover:to-[#3F0D28] text-white shadow-lg hover:shadow-xl hover:shadow-[#3F0D28]/30"
+                  className="p-2 rounded-lg transition-all duration-300 flex items-center justify-center bg-gradient-to-br from-[#101010] to-[#101010] hover:from-[#101010] hover:to-[#101010] text-white shadow-lg hover:shadow-xl hover:shadow-[#101010]/30"
                 >
                   <Plus className="h-4 w-4 stroke-[2.5]" />
                 </button>
@@ -220,7 +220,7 @@ export default function SimplifiedSidebar({ isSidebarCollapsed, onMouseEnter, on
                     }}
                     className="w-full px-4 py-2.5 text-left text-sm text-gray-900 hover:bg-gray-100 transition-all duration-200 flex items-center gap-3"
                   >
-                    <div className="p-1.5 rounded-lg bg-gradient-to-br from-[#3F0D28] to-[#5a1a3a] shadow-sm">
+                    <div className="p-1.5 rounded-lg bg-gradient-to-br from-[#101010] to-[#101010] shadow-sm">
                       <Plus className="h-4 w-4 text-white" />
                     </div>
                     <span className="font-medium">Add New Brand</span>
@@ -258,8 +258,8 @@ export default function SimplifiedSidebar({ isSidebarCollapsed, onMouseEnter, on
                     </button>
                   ))}
                   <button className="w-full flex items-center gap-2 px-3 py-2 hover:bg-gray-50 transition-colors text-left border-t border-gray-100">
-                    <Plus className="h-4 w-4 text-[#E92C92]" />
-                    <span className="text-sm text-[#E92C92] font-medium">Add Brand</span>
+                    <Plus className="h-4 w-4 text-[#f2ff00]" />
+                    <span className="text-sm text-[#f2ff00] font-medium">Add Brand</span>
                   </button>
                 </div>
               )}

@@ -90,7 +90,7 @@ export const SHADOWS = {
 
   // Special shadows
   inner: 'inset 0 2px 4px 0 rgba(0, 0, 0, 0.05)',
-  glow: '0 0 20px rgba(233, 44, 146, 0.3)', // Brand pink glow
+  glow: '0 0 20px rgba(242, 255, 0, 0.3)', // Brand yellow glow
   glowSuccess: '0 0 20px rgba(48, 209, 88, 0.3)', // Success green glow
   glowDanger: '0 0 20px rgba(239, 68, 68, 0.3)', // Danger red glow
   none: 'none',

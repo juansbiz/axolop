@@ -202,8 +202,8 @@ export default function AudioWaveform({
           onClick={togglePlay}
           className={cn(
             "w-8 h-8 rounded-full flex items-center justify-center",
-            "bg-[#3F0D28] text-white",
-            "hover:bg-[#5B1046] transition-colors"
+            "bg-[#101010] text-white",
+            "hover:bg-[#101010] transition-colors"
           )}
         >
           {isPlaying ? (
@@ -226,7 +226,7 @@ export default function AudioWaveform({
                 key={i}
                 className={cn(
                   "flex-1 rounded-full transition-colors",
-                  isPlayed ? "bg-[#3F0D28]" : "bg-gray-300"
+                  isPlayed ? "bg-[#101010]" : "bg-gray-300"
                 )}
                 style={{ height: `${height * 100}%` }}
               />
@@ -282,7 +282,7 @@ export default function AudioWaveform({
                 transition={{ delay: i * 0.01 }}
                 className={cn(
                   "flex-1 rounded-full transition-colors",
-                  isPlayed ? "bg-[#3F0D28]" : "bg-gray-300 group-hover:bg-gray-400"
+                  isPlayed ? "bg-[#101010]" : "bg-gray-300 group-hover:bg-gray-400"
                 )}
                 style={{ height: `${height * 100}%` }}
               />
@@ -316,9 +316,9 @@ export default function AudioWaveform({
               onClick={togglePlay}
               className={cn(
                 "w-12 h-12 rounded-full flex items-center justify-center",
-                "bg-gradient-to-b from-[#8B4F7A] via-[#5B1046] to-[#3F0D28]",
-                "text-white shadow-lg shadow-[#3F0D28]/30",
-                "hover:shadow-[#3F0D28]/50 transition-shadow"
+                "bg-gradient-to-b from-[#101010] via-[#101010] to-[#101010]",
+                "text-white shadow-lg shadow-[#101010]/30",
+                "hover:shadow-[#101010]/50 transition-shadow"
               )}
             >
               {isPlaying ? (
@@ -357,7 +357,7 @@ export default function AudioWaveform({
               step="0.1"
               value={isMuted ? 0 : volume}
               onChange={handleVolumeChange}
-              className="w-20 accent-[#3F0D28]"
+              className="w-20 accent-[#101010]"
             />
           </div>
         </div>
@@ -406,7 +406,7 @@ export default function AudioWaveform({
       {/* Loading state */}
       {isLoading && (
         <div className="absolute inset-0 bg-white/80 flex items-center justify-center">
-          <div className="w-6 h-6 border-2 border-[#3F0D28] border-t-transparent rounded-full animate-spin" />
+          <div className="w-6 h-6 border-2 border-[#101010] border-t-transparent rounded-full animate-spin" />
         </div>
       )}
     </div>
@@ -466,14 +466,14 @@ export function SimpleAudioPlayer({
 
       <button
         onClick={togglePlay}
-        className="w-8 h-8 rounded-full bg-[#3F0D28] text-white flex items-center justify-center hover:bg-[#5B1046] transition-colors"
+        className="w-8 h-8 rounded-full bg-[#101010] text-white flex items-center justify-center hover:bg-[#101010] transition-colors"
       >
         {isPlaying ? <Pause className="w-3.5 h-3.5" /> : <Play className="w-3.5 h-3.5 ml-0.5" />}
       </button>
 
       <div className="flex-1 h-1.5 bg-gray-200 rounded-full overflow-hidden">
         <div
-          className="h-full bg-[#3F0D28] rounded-full transition-all"
+          className="h-full bg-[#101010] rounded-full transition-all"
           style={{ width: `${progress}%` }}
         />
       </div>

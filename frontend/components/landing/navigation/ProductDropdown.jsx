@@ -194,7 +194,7 @@ const colorStyles = {
     iconText: "text-yellow-400",
     hoverBg: "hover:bg-yellow-500/10",
     gradientFrom: "from-yellow-500",
-    gradientTo: "to-pink-500",
+    gradientTo: "to-yellow-500",
   },
 };
 

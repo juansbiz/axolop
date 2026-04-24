@@ -203,7 +203,7 @@ export default function Register() {
         </div>
 
         {/* Right Side - Image */}
-        <div className="hidden lg:block lg:w-1/2 bg-gradient-to-br from-purple-600 to-pink-600 p-8">
+        <div className="hidden lg:block lg:w-1/2 bg-gradient-to-br from-yellow-600 to-yellow-500 p-8">
           <div className="h-full flex items-center justify-center">
             <div className="text-center text-white">
               <h2 className="text-4xl font-bold mb-4">Join thousands of brands</h2>

@@ -97,8 +97,8 @@ const StatDisplay = ({
 }) => {
   const colorClasses = {
     default: "text-white",
-    red: "text-transparent bg-clip-text bg-gradient-to-r from-[#E92C92] to-[#140516]",
-    vibrant: "text-[#E92C92]", // Vibrant red for key metrics
+    red: "text-transparent bg-clip-text bg-gradient-to-r from-[#f2ff00] to-[#101010]",
+    vibrant: "text-[#f2ff00]", // Vibrant red for key metrics
     teal: "text-transparent bg-clip-text bg-gradient-to-r from-[#14787b] to-[#1fb5b9]",
     amber:
       "text-transparent bg-clip-text bg-gradient-to-r from-amber-500 to-yellow-500",

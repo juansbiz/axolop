@@ -27,7 +27,7 @@ const AppleButton = ({
 
   const variants = {
     primary:
-      "bg-gradient-to-r from-[#3F0D28] to-[#3F0D28] text-white hover:from-[#3F0D28] hover:to-[#3F0D28]",
+      "bg-gradient-to-r from-[#101010] to-[#101010] text-white hover:from-[#101010] hover:to-[#101010]",
     secondary:
       "bg-white/10 backdrop-blur-sm text-white border border-white/20 hover:bg-white/20",
     outline:
@@ -46,7 +46,7 @@ const AppleButton = ({
       className={cn(
         "relative inline-flex items-center justify-center",
         "font-medium rounded-xl transition-all duration-300",
-        "focus:outline-none focus:ring-2 focus:ring-[#3F0D28]/50",
+        "focus:outline-none focus:ring-2 focus:ring-[#101010]/50",
         "disabled:opacity-50 disabled:cursor-not-allowed",
         variants[variant],
         sizes[size],

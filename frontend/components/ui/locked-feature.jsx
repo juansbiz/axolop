@@ -14,8 +14,8 @@ export function LockedFeature({ featureId, className = "" }) {
       className={`absolute inset-0 bg-white/95 backdrop-blur-sm z-50 flex items-center justify-center ${className}`}
     >
       <div className="max-w-2xl mx-auto px-6 py-12 text-center">
-        <div className="mx-auto h-20 w-20 rounded-full bg-gradient-to-br from-[#3F0D28]/10 to-[#5A1840]/10 flex items-center justify-center mb-6 shadow-lg">
-          <Lock className="h-10 w-10 text-[#3F0D28]" />
+        <div className="mx-auto h-20 w-20 rounded-full bg-gradient-to-br from-[#101010]/10 to-[#101010]/10 flex items-center justify-center mb-6 shadow-lg">
+          <Lock className="h-10 w-10 text-[#101010]" />
         </div>
 
         <h2 className="text-3xl font-bold text-gray-900 mb-3">
@@ -25,7 +25,7 @@ export function LockedFeature({ featureId, className = "" }) {
         <p className="text-lg text-gray-600 mb-6">{feature.description}</p>
 
         {feature.roadmapETA && (
-          <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-gradient-to-r from-[#3F0D28]/10 to-[#5A1840]/10 text-[#3F0D28] font-semibold mb-8">
+          <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-gradient-to-r from-[#101010]/10 to-[#101010]/10 text-[#101010] font-semibold mb-8">
             <Calendar className="h-4 w-4" />
             <span>Expected Launch: {feature.roadmapETA}</span>
           </div>
@@ -37,8 +37,8 @@ export function LockedFeature({ featureId, className = "" }) {
           </h3>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4 text-left">
             <div className="flex items-start gap-3">
-              <div className="h-8 w-8 rounded-lg bg-[#3F0D28]/10 flex items-center justify-center flex-shrink-0 mt-1">
-                <span className="text-[#3F0D28] font-bold">✓</span>
+              <div className="h-8 w-8 rounded-lg bg-[#101010]/10 flex items-center justify-center flex-shrink-0 mt-1">
+                <span className="text-[#101010] font-bold">✓</span>
               </div>
               <div>
                 <p className="font-medium text-gray-900">Full Task Tracking</p>
@@ -48,8 +48,8 @@ export function LockedFeature({ featureId, className = "" }) {
               </div>
             </div>
             <div className="flex items-start gap-3">
-              <div className="h-8 w-8 rounded-lg bg-[#3F0D28]/10 flex items-center justify-center flex-shrink-0 mt-1">
-                <span className="text-[#3F0D28] font-bold">✓</span>
+              <div className="h-8 w-8 rounded-lg bg-[#101010]/10 flex items-center justify-center flex-shrink-0 mt-1">
+                <span className="text-[#101010] font-bold">✓</span>
               </div>
               <div>
                 <p className="font-medium text-gray-900">Team Collaboration</p>
@@ -59,8 +59,8 @@ export function LockedFeature({ featureId, className = "" }) {
               </div>
             </div>
             <div className="flex items-start gap-3">
-              <div className="h-8 w-8 rounded-lg bg-[#3F0D28]/10 flex items-center justify-center flex-shrink-0 mt-1">
-                <span className="text-[#3F0D28] font-bold">✓</span>
+              <div className="h-8 w-8 rounded-lg bg-[#101010]/10 flex items-center justify-center flex-shrink-0 mt-1">
+                <span className="text-[#101010] font-bold">✓</span>
               </div>
               <div>
                 <p className="font-medium text-gray-900">Smart Views</p>
@@ -70,8 +70,8 @@ export function LockedFeature({ featureId, className = "" }) {
               </div>
             </div>
             <div className="flex items-start gap-3">
-              <div className="h-8 w-8 rounded-lg bg-[#3F0D28]/10 flex items-center justify-center flex-shrink-0 mt-1">
-                <span className="text-[#3F0D28] font-bold">✓</span>
+              <div className="h-8 w-8 rounded-lg bg-[#101010]/10 flex items-center justify-center flex-shrink-0 mt-1">
+                <span className="text-[#101010] font-bold">✓</span>
               </div>
               <div>
                 <p className="font-medium text-gray-900">Automation</p>
@@ -86,7 +86,7 @@ export function LockedFeature({ featureId, className = "" }) {
         <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
           <Button
             size="lg"
-            className="bg-gradient-to-r from-[#3F0D28] to-[#5A1840] hover:from-[#5A1840] hover:to-[#3F0D28] text-white gap-2"
+            className="bg-gradient-to-r from-[#101010] to-[#101010] hover:from-[#101010] hover:to-[#101010] text-white gap-2"
           >
             <Bell className="h-4 w-4" />
             Notify Me When Available
@@ -98,7 +98,7 @@ export function LockedFeature({ featureId, className = "" }) {
 
         <p className="text-sm text-gray-500 mt-6">
           This feature is currently in development and will be available to{" "}
-          <span className="font-semibold text-[#3F0D28]">
+          <span className="font-semibold text-[#101010]">
             Build, Scale, and God tier
           </span>{" "}
           subscribers in {feature.roadmapETA}.

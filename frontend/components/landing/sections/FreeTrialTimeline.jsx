@@ -28,8 +28,8 @@ const colorStyles = {
     text: 'text-amber-400',
   },
   red: {
-    bg: 'bg-[#E92C92]',
-    ring: 'ring-[#E92C92]/30',
+    bg: 'bg-[#f2ff00]',
+    ring: 'ring-[#f2ff00]/30',
     text: 'text-white',
   },
 };
@@ -91,7 +91,7 @@ const FreeTrialTimeline = ({ className }) => {
         {/* Timeline */}
         <div className="relative">
           {/* Timeline line */}
-          <div className="absolute left-1/2 top-0 bottom-0 w-px bg-gradient-to-b from-[#14787b] via-amber-500 to-[#E92C92] hidden md:block" />
+          <div className="absolute left-1/2 top-0 bottom-0 w-px bg-gradient-to-b from-[#14787b] via-amber-500 to-[#f2ff00] hidden md:block" />
 
           {/* Timeline steps */}
           <div className="space-y-12 md:space-y-0">
@@ -182,7 +182,7 @@ const FreeTrialTimeline = ({ className }) => {
             <div
               className="relative overflow-hidden px-8 py-4 rounded-full inline-flex items-center"
               style={{
-                background: 'linear-gradient(180deg, #ff85c8 0%, #E92C92 30%, #c41e78 70%, #ff69b4 100%)',
+                background: 'linear-gradient(180deg, #f2ff00 0%, #f2ff00 30%, #f2ff00 70%, #f2ff00 100%)',
                 boxShadow: 'inset 0 2px 4px rgba(255,255,255,0.6), inset 0 -2px 4px rgba(0,0,0,0.2), 0 2px 8px rgba(0,0,0,0.3)',
                 border: '1px solid rgba(255,255,255,0.3)',
               }}

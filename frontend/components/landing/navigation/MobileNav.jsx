@@ -347,8 +347,8 @@ const MobileNav = ({ isOpen, onClose, affiliateRef }) => {
                       <>
                         <Button
                           className={cn(
-                            "w-full bg-gradient-to-br from-[#E92C92] to-[#C81E78]",
-                            "hover:from-[#C81E78] hover:to-[#E92C92]",
+                            "w-full bg-gradient-to-br from-[#f2ff00] to-[#f2ff00]",
+                            "hover:from-[#f2ff00] hover:to-[#f2ff00]",
                             "text-white font-medium",
                             "shadow-[0_0_25px_rgba(233,44,146,0.5)]",
                             "hover:shadow-[0_0_35px_rgba(233,44,146,0.7)]",
@@ -380,8 +380,8 @@ const MobileNav = ({ isOpen, onClose, affiliateRef }) => {
                       <>
                         <Button
                           className={cn(
-                            "w-full bg-gradient-to-br from-[#E92C92] to-[#C81E78]",
-                            "hover:from-[#C81E78] hover:to-[#E92C92]",
+                            "w-full bg-gradient-to-br from-[#f2ff00] to-[#f2ff00]",
+                            "hover:from-[#f2ff00] hover:to-[#f2ff00]",
                             "text-white font-medium",
                             "shadow-[0_0_25px_rgba(233,44,146,0.5)]",
                             "hover:shadow-[0_0_35px_rgba(233,44,146,0.7)]",

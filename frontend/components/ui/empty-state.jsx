@@ -48,12 +48,12 @@ export function EmptyState({
                 repeat: Infinity,
                 ease: 'easeInOut',
               }}
-              className="absolute inset-0 bg-[#3F0D28]/20 dark:bg-[#CBA6F7]/20 rounded-full blur-2xl"
+              className="absolute inset-0 bg-[#101010]/20 dark:bg-[#f2ff00]/20 rounded-full blur-2xl"
             />
 
             {/* Icon */}
-            <div className="relative w-20 h-20 md:w-24 md:h-24 bg-gradient-to-br from-[#3F0D28]/10 to-[#3F0D28]/20 dark:from-[#3F0D28]/20 dark:to-[#3F0D28]/30 rounded-full flex items-center justify-center">
-              <Icon className="w-10 h-10 md:w-12 md:h-12 text-[#3F0D28] dark:text-[#7A3D5C]" />
+            <div className="relative w-20 h-20 md:w-24 md:h-24 bg-gradient-to-br from-[#101010]/10 to-[#101010]/20 dark:from-[#101010]/20 dark:to-[#101010]/30 rounded-full flex items-center justify-center">
+              <Icon className="w-10 h-10 md:w-12 md:h-12 text-[#101010] dark:text-[#f2ff00]" />
             </div>
           </div>
         ) : null}

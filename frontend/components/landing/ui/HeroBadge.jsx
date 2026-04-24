@@ -14,13 +14,13 @@ const HeroBadge = ({
     <div
       className={cn(
         "inline-flex items-center gap-2 px-4 py-2 rounded-full",
-        "bg-[#E92C92]/20 border border-[#E92C92]/30",
+        "bg-[#f2ff00]/20 border border-[#f2ff00]/30",
         "mb-6",
         className
       )}
     >
-      {Icon && <Icon className="w-4 h-4 text-[#E92C92]" />}
-      <span className="text-sm font-medium text-[#E92C92]">
+      {Icon && <Icon className="w-4 h-4 text-[#f2ff00]" />}
+      <span className="text-sm font-medium text-[#f2ff00]">
         {text}
       </span>
     </div>

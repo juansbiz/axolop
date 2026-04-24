@@ -21,7 +21,7 @@ const SpaceScreenshot = ({
   const spaces = {
     sales: {
       title: "Sales",
-      color: "#E92C92",
+      color: "#f2ff00",
       items: [
         { label: "Orders", value: "24" },
         { label: "Customers", value: "156" },
@@ -82,11 +82,11 @@ const SpaceScreenshot = ({
       {/* Sidebar */}
       <div className="flex">
         <div className="w-16 flex flex-col items-center py-4 bg-[#0a0410] border-r border-white/5">
-          <div className="w-8 h-8 rounded-lg bg-gradient-to-br from-[#E92C92] to-[#C81E78] flex items-center justify-center mb-4">
+          <div className="w-8 h-8 rounded-lg bg-gradient-to-br from-[#f2ff00] to-[#f2ff00] flex items-center justify-center mb-4">
             <span className="text-xs font-bold text-white">A</span>
           </div>
           <div className="space-y-3">
-            <div className={`w-8 h-8 rounded-lg flex items-center justify-center ${space === 'sales' ? 'bg-[#E92C92]/20 text-[#E92C92]' : 'text-gray-500'}`}>
+            <div className={`w-8 h-8 rounded-lg flex items-center justify-center ${space === 'sales' ? 'bg-[#f2ff00]/20 text-[#f2ff00]' : 'text-gray-500'}`}>
               <ShoppingCart className="w-4 h-4" />
             </div>
             <div className={`w-8 h-8 rounded-lg flex items-center justify-center ${space === 'marketing' ? 'bg-[#14787B]/20 text-[#14787B]' : 'text-gray-500'}`}>

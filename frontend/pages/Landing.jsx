@@ -62,7 +62,7 @@ function HeroSection() {
                 className="relative overflow-hidden px-10 py-5 rounded-full leading-none flex items-center transition transform group-hover:-translate-y-1 active:translate-y-0 active:scale-95"
                 style={{
                   background:
-                    "linear-gradient(180deg, #ff85c8 0%, #f2ff00 30%, #c41e78 70%, #ff69b4 100%)",
+                    "linear-gradient(180deg, #f2ff00 0%, #f2ff00 30%, #f2ff00 70%, #f2ff00 100%)",
                   boxShadow:
                     "inset 0 2px 4px rgba(255,255,255,0.6), inset 0 -2px 4px rgba(0,0,0,0.2), 0 10px 40px rgba(233,44,146,0.5), 0 2px 8px rgba(0,0,0,0.3)",
                   border: "1px solid rgba(255,255,255,0.3)",
@@ -164,7 +164,7 @@ export default function Landing() {
           <section className="relative w-full pt-8 pb-10 px-4">
             <div className="relative w-full max-w-6xl mx-auto">
               <div className="absolute -inset-4 bg-gradient-to-r from-[#0F0510]/20 via-[#0F0510]/20 to-[#0F0510]/20 rounded-3xl blur-2xl"></div>
-              <div className="absolute -inset-[2px] bg-gradient-to-br from-pink-400/30 via-purple-400/20 to-cyan-400/30 rounded-2xl opacity-60"></div>
+              <div className="absolute -inset-[2px] bg-gradient-to-br from-yellow-400/30 via-yellow-400/20 to-yellow-400/30 rounded-2xl opacity-60"></div>
               <div className="relative rounded-2xl overflow-hidden shadow-2xl border border-gray-800/50 bg-[#0a0f1a]">
                 <div className="relative w-full" style={{ aspectRatio: "16/9" }}>
                   <div className="absolute inset-0 flex items-center justify-center bg-gradient-to-br from-[#1a1a2e] to-[#0F0510]">

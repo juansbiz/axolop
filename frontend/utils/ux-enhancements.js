@@ -49,13 +49,13 @@ export const LoadingOverlay = ({ isLoading, message, progress }) => {
     <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50">
       <div className="bg-white rounded-lg p-6 max-w-sm w-full mx-4">
         <div className="flex flex-col items-center space-y-4">
-          <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-plum-500"></div>
+          <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-yellow-500"></div>
           {message && <p className="text-gray-700 text-center">{message}</p>}
           {progress > 0 && (
             <div className="w-full">
               <div className="bg-gray-200 rounded-full h-2">
                 <div
-                  className="bg-plum-500 h-2 rounded-full transition-all duration-300"
+                  className="bg-yellow-500 h-2 rounded-full transition-all duration-300"
                   style={{ width: `${progress}%` }}
                 ></div>
               </div>

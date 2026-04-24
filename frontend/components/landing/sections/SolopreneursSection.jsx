@@ -20,38 +20,38 @@ const SOLOPRENEUR_FEATURES = [
     description:
       "Track all your customers in one place. Own your data forever.",
     icon: Users,
-    color: "pink",
+    color: "yellow",
   },
   {
     title: "Pipeline",
     description: "Visual tracking from prospect to repeat customer.",
     icon: Calendar,
-    color: "pink",
+    color: "yellow",
   },
   {
     title: "Email Marketing",
     description:
       "Campaigns and automations without the expensive subscriptions.",
     icon: Mail,
-    color: "pink",
+    color: "yellow",
   },
   {
     title: "Form Builder",
     description: "Lead capture and intake forms. No coding required.",
     icon: FileText,
-    color: "pink",
+    color: "yellow",
   },
   {
     title: "Task Boards",
     description: "Keep your business organized with visual boards.",
     icon: CheckSquare,
-    color: "pink",
+    color: "yellow",
   },
   {
     title: "Connect Your AI",
     description: "Use ChatGPT, Claude, or any LLM. Not locked into their AI.",
     icon: Zap,
-    color: "pink",
+    color: "yellow",
   },
 ];
 
@@ -69,7 +69,7 @@ const SolopreneursSection = ({ className }) => {
         <div className="text-center mb-16">
           {/* Badge */}
           <div className="inline-block mb-6">
-            <div className="px-4 py-2 rounded-full bg-[#E92C92]/40 border border-[#E92C92]/60">
+            <div className="px-4 py-2 rounded-full bg-[#f2ff00]/40 border border-[#f2ff00]/60">
               <span className="text-sm font-semibold text-white uppercase tracking-wider">
                 For Ecommerce Founders
               </span>
@@ -90,17 +90,17 @@ const SolopreneursSection = ({ className }) => {
           <div
             className={cn(
               "relative p-8 rounded-3xl",
-              "bg-gradient-to-br from-[#E92C92]/40 to-[#C81E78]/30",
-              "border-2 border-[#E92C92]/60",
+              "bg-gradient-to-br from-[#f2ff00]/40 to-[#f2ff00]/30",
+              "border-2 border-[#f2ff00]/60",
               "shadow-[0_0_60px_-15px_rgba(233,44,146,0.4)]",
             )}
           >
             {/* Glow effect */}
-            <div className="absolute inset-0 rounded-3xl bg-gradient-to-br from-[#E92C92]/20 to-transparent pointer-events-none" />
+            <div className="absolute inset-0 rounded-3xl bg-gradient-to-br from-[#f2ff00]/20 to-transparent pointer-events-none" />
 
             <div className="relative z-10 flex flex-col md:flex-row items-center gap-6">
               {/* Icon */}
-              <div className="w-20 h-20 rounded-2xl bg-gradient-to-br from-[#E92C92] to-[#C81E78] flex items-center justify-center flex-shrink-0 shadow-lg shadow-[#E92C92]/40">
+              <div className="w-20 h-20 rounded-2xl bg-gradient-to-br from-[#f2ff00] to-[#f2ff00] flex items-center justify-center flex-shrink-0 shadow-lg shadow-[#f2ff00]/40">
                 <Sparkles className="w-10 h-10 text-white" />
               </div>
 
@@ -110,7 +110,7 @@ const SolopreneursSection = ({ className }) => {
                   <h3 className="text-2xl font-bold text-white">
                     Run Your Entire Business
                   </h3>
-                  <span className="px-2 py-0.5 text-xs font-bold rounded-full bg-[#E92C92] text-white uppercase">
+                  <span className="px-2 py-0.5 text-xs font-bold rounded-full bg-[#f2ff00] text-white uppercase">
                     Replaces 8+ Tools
                   </span>
                 </div>
@@ -142,19 +142,19 @@ const SolopreneursSection = ({ className }) => {
               feature.color === "blue"
                 ? "bg-[#1fb5b9]/20"
                 : feature.color === "yellow"
-                  ? "bg-[#d4a00a]/20"
-                  : "bg-[#E92C92]/30";
+                  ? "bg-[#f2ff00]/20"
+                  : "bg-[#f2ff00]/30";
             const iconColor =
               feature.color === "blue"
                 ? "text-[#1fb5b9]"
                 : feature.color === "yellow"
-                  ? "text-[#f5c518]"
-                  : "text-white";
+                  ? "text-[#f2ff00]"
+                  : "text-[#f2ff00]";
             const borderHover =
               feature.color === "blue"
                 ? "hover:border-[#1fb5b9]/30"
                 : feature.color === "yellow"
-                  ? "hover:border-[#d4a00a]/30"
+                  ? "hover:border-[#f2ff00]/30"
                   : "hover:border-white/20";
 
             return (
@@ -195,7 +195,7 @@ const SolopreneursSection = ({ className }) => {
             <p className="text-xs text-gray-400">Saved weekly</p>
           </div>
           <div className="text-center p-4 rounded-xl bg-white/5 border border-white/10">
-            <p className="text-2xl font-bold text-[#f5c518]">$208</p>
+            <p className="text-2xl font-bold text-[#f2ff00]">$208</p>
             <p className="text-xs text-gray-400">Monthly savings</p>
           </div>
           <div className="text-center p-4 rounded-xl bg-white/5 border border-white/10">
@@ -211,7 +211,7 @@ const SolopreneursSection = ({ className }) => {
               className="relative overflow-hidden px-8 py-4 rounded-full leading-none flex items-center transition transform group-hover:-translate-y-1 active:translate-y-0 active:scale-95"
               style={{
                 background:
-                  "linear-gradient(180deg, #ff85c8 0%, #E92C92 30%, #c41e78 70%, #ff69b4 100%)",
+                  "linear-gradient(180deg, #f2ff00 0%, #f2ff00 30%, #f2ff00 70%, #f2ff00 100%)",
                 boxShadow:
                   "inset 0 2px 4px rgba(255,255,255,0.6), inset 0 -2px 4px rgba(0,0,0,0.2), 0 10px 40px rgba(233,44,146,0.5), 0 2px 8px rgba(0,0,0,0.3)",
                 border: "1px solid rgba(255,255,255,0.3)",

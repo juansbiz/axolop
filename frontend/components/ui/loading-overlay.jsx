@@ -50,7 +50,7 @@ export function LoadingOverlay({
             className="flex flex-col items-center gap-3 px-6 py-4 bg-white dark:bg-gray-800 rounded-xl shadow-lg shadow-md dark:border-gray-700"
           >
             {spinner && (
-              <Loader2 className="h-8 w-8 text-[#3F0D28] dark:text-[#7A3D5C] animate-spin" />
+              <Loader2 className="h-8 w-8 text-[#101010] dark:text-[#f2ff00] animate-spin" />
             )}
             {loadingMessage && (
               <p className="text-sm font-medium text-gray-700 dark:text-gray-300">
@@ -79,7 +79,7 @@ export function LoadingSpinner({ size = 'md', className }) {
     <Loader2
       className={cn(
         sizeClasses[size],
-        'text-[#3F0D28] dark:text-[#7A3D5C] animate-spin',
+        'text-[#101010] dark:text-[#f2ff00] animate-spin',
         className
       )}
     />

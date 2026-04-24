@@ -20,7 +20,7 @@ const SpacesSection = ({ className }) => {
       title: "Sales",
       description: "Track orders, manage products, and sync with your store. All your sales data in one place.",
       icon: ShoppingCart,
-      color: "#E92C92",
+      color: "#f2ff00",
       features: [
         "Product catalog sync",
         "Order tracking",
@@ -78,7 +78,7 @@ const SpacesSection = ({ className }) => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section header */}
         <div className="text-center mb-16">
-          <p className="text-[#E92C92] font-semibold mb-3 tracking-wide uppercase text-sm">
+          <p className="text-[#f2ff00] font-semibold mb-3 tracking-wide uppercase text-sm">
             Three Powerful Spaces
           </p>
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-4">
@@ -177,7 +177,7 @@ const SpacesSection = ({ className }) => {
             <div
               className="relative overflow-hidden px-8 py-4 rounded-full inline-flex items-center gap-2"
               style={{
-                background: "linear-gradient(180deg, #ff85c8 0%, #E92C92 30%, #c41e78 70%, #ff69b4 100%)",
+                background: "linear-gradient(180deg, #f2ff00 0%, #f2ff00 30%, #f2ff00 70%, #f2ff00 100%)",
                 boxShadow: "inset 0 2px 4px rgba(255,255,255,0.6), inset 0 -2px 4px rgba(0,0,0,0.2), 0 2px 8px rgba(0,0,0,0.3)",
                 border: "1px solid rgba(255,255,255,0.3)",
               }}

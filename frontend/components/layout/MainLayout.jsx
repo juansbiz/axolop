@@ -64,7 +64,7 @@ export default function MainLayout() {
   return (
     <div
       className="flex h-screen w-full overflow-hidden"
-      style={{ background: "linear-gradient(180deg, #0a0a0a 0%, #1a0812 50%, #0a0a0a 100%)" }}
+      style={{ background: "linear-gradient(180deg, #0a0a0a 0%, #1a1a1a 50%, #0a0a0a 100%)" }}
     >
       {/* Sidebar */}
       <SimplifiedSidebar
@@ -103,7 +103,7 @@ export default function MainLayout() {
         <header
           className="h-10 w-full backdrop-blur-xl sticky top-0 z-50 flex items-center justify-between px-6 shadow-2xl"
           style={{
-            background: "linear-gradient(90deg, #0a0a0a 0%, #1a0812 30%, #3F0D28 50%, #1a0812 70%, #0a0a0a 100%)",
+            background: "linear-gradient(90deg, #0a0a0a 0%, #1a1a1a 30%, #101010 50%, #1a1a1a 70%, #0a0a0a 100%)",
           }}
         >
           {/* Search Bar */}

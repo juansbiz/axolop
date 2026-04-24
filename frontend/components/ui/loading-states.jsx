@@ -17,7 +17,7 @@ export const FullPageLoader = () => {
         className="text-center"
       >
         <div className="inline-flex items-center space-x-2">
-          <div className="animate-spin rounded-full h-8 w-8 border-2 border-gray-200 dark:border-gray-700 border-t-[#3F0D28]"></div>
+          <div className="animate-spin rounded-full h-8 w-8 border-2 border-gray-200 dark:border-gray-700 border-t-[#101010]"></div>
           <span className="text-gray-600 dark:text-gray-400 text-sm">{t('messages.loading')}</span>
         </div>
       </motion.div>
@@ -42,7 +42,7 @@ export const ButtonLoader = ({ text }) => {
   const loadingText = text || t('messages.loading');
   return (
     <div className="inline-flex items-center space-x-2">
-      <div className="animate-spin rounded-full h-4 w-4 border-2 border-gray-200 dark:border-gray-700 border-t-[#3F0D28]"></div>
+      <div className="animate-spin rounded-full h-4 w-4 border-2 border-gray-200 dark:border-gray-700 border-t-[#101010]"></div>
       <span className="text-gray-600 dark:text-gray-400 text-sm">{loadingText}</span>
     </div>
   );

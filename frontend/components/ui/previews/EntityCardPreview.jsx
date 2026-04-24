@@ -35,7 +35,7 @@ export default function EntityCardPreview({ data }) {
       <div className="flex items-center gap-3">
         <div className={cn(
           "w-10 h-10 rounded-full flex items-center justify-center text-sm font-bold",
-          "bg-gradient-to-br from-[#3F0D28] to-[#5B1046] text-white"
+          "bg-gradient-to-br from-[#101010] to-[#101010] text-white"
         )}>
           {initials || <User className="w-5 h-5" />}
         </div>

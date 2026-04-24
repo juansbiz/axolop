@@ -77,7 +77,7 @@ const READ_MORE_LINKS = [
 const badgeColors = {
   teal: "bg-[#14787b]/20 text-[#1fb5b9]",
   amber: "bg-amber-500/20 text-amber-400",
-  red: "bg-[#E92C92]/20 text-[#F472B6]",
+  red: "bg-[#f2ff00]/20 text-[#F472B6]",
 };
 
 /**

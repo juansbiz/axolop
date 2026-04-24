@@ -63,7 +63,7 @@ const PricingComparisonSection = () => {
             <div className="text-sm font-medium text-gray-500 uppercase tracking-wide">Feature</div>
           </div>
           <div className="p-4 text-center">
-            <div className="text-[#E92C92] font-bold text-lg">Axolop</div>
+            <div className="text-[#f2ff00] font-bold text-lg">Axolop</div>
             <div className="text-gray-500 text-xs">Free - $79/mo</div>
           </div>
           <div className="p-4 text-center">
@@ -86,8 +86,8 @@ const PricingComparisonSection = () => {
               </div>
               <div className="p-4 flex items-center justify-center">
                 {row.axolop ? (
-                  <div className="w-6 h-6 rounded-full bg-[#E92C92]/20 flex items-center justify-center">
-                    <Check className="h-4 w-4 text-[#E92C92]" />
+                  <div className="w-6 h-6 rounded-full bg-[#f2ff00]/20 flex items-center justify-center">
+                    <Check className="h-4 w-4 text-[#f2ff00]" />
                   </div>
                 ) : (
                   <X className="h-4 w-4 text-gray-600" />
@@ -125,7 +125,7 @@ const PricingComparisonSection = () => {
             <div
               className="relative overflow-hidden px-10 py-5 rounded-full inline-flex items-center gap-3 cursor-pointer"
               style={{
-                background: "linear-gradient(180deg, #ff85c8 0%, #E92C92 30%, #c41e78 70%, #ff69b4 100%)",
+                background: "linear-gradient(180deg, #f2ff00 0%, #f2ff00 30%, #f2ff00 70%, #f2ff00 100%)",
                 boxShadow: "inset 0 2px 4px rgba(255,255,255,0.6), inset 0 -2px 4px rgba(0,0,0,0.2), 0 4px 12px rgba(233,44,146,0.4)",
                 border: "1px solid rgba(255,255,255,0.3)",
               }}

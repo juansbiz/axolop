@@ -179,7 +179,7 @@ export const focusManagement = {
     if (element) {
       element.focus();
       // Ensure focus is visible
-      element.style.outline = '2px solid var(--form-accent, #3F0D28)';
+      element.style.outline = '2px solid var(--form-accent, #101010)';
       element.style.outlineOffset = '2px';
     }
   },

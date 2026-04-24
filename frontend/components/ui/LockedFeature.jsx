@@ -154,13 +154,13 @@ export const LockedOverlay = ({
       <p className="text-crm-text-secondary text-center max-w-md mb-6">
         {displayDesc}
       </p>
-      <div className="bg-[#3F0D28]/10 dark:bg-[#CBA6F7]/10 rounded-lg p-4 max-w-md">
-        <p className="text-sm text-[#3F0D28] dark:text-[#5a1a3a] text-center">
+      <div className="bg-[#101010]/10 dark:bg-[#f2ff00]/10 rounded-lg p-4 max-w-md">
+        <p className="text-sm text-[#101010] dark:text-[#101010] text-center">
           <span className="font-semibold">Coming in {version}:</span> This
           feature will be available soon!
           <Link
             to="/roadmap"
-            className="ml-1 text-[#3F0D28] dark:text-[#CBA6F7] hover:underline"
+            className="ml-1 text-[#101010] dark:text-[#f2ff00] hover:underline"
           >
             View our roadmap
           </Link>

@@ -18,8 +18,8 @@ export default function UpgradePrompt({
     return (
       <div className={`flex-1 flex items-center justify-center bg-gray-50 p-6 ${className}`}>
         <div className="max-w-md mx-auto text-center">
-          <div className="mx-auto h-16 w-16 rounded-full bg-gradient-to-br from-[#E92C92]/10 to-[#C81E78]/10 flex items-center justify-center mb-6">
-            <Lock className="h-8 w-8 text-[#E92C92]" />
+          <div className="mx-auto h-16 w-16 rounded-full bg-gradient-to-br from-[#f2ff00]/10 to-[#f2ff00]/10 flex items-center justify-center mb-6">
+            <Lock className="h-8 w-8 text-[#f2ff00]" />
           </div>
 
           <h2 className="text-2xl font-bold text-gray-900 mb-3">
@@ -28,7 +28,7 @@ export default function UpgradePrompt({
 
           <p className="text-gray-600 mb-6">{description}</p>
 
-          <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-[#E92C92]/10 text-[#E92C92] font-semibold mb-8">
+          <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-[#f2ff00]/10 text-[#f2ff00] font-semibold mb-8">
             <Sparkles className="h-4 w-4" />
             <span>Available in {requiredTier} tier and above</span>
           </div>
@@ -37,7 +37,7 @@ export default function UpgradePrompt({
             <Link to="/pricing">
               <Button
                 size="lg"
-                className="bg-gradient-to-r from-[#E92C92] to-[#C81E78] hover:from-[#d4267f] hover:to-[#5C1741] text-white gap-2"
+                className="bg-gradient-to-r from-[#f2ff00] to-[#f2ff00] hover:from-[#f2ff00] hover:to-[#101010] text-white gap-2"
               >
                 <ArrowRight className="h-4 w-4" />
                 Upgrade to {requiredTier}
@@ -51,10 +51,10 @@ export default function UpgradePrompt({
 
   // Inline variant (default)
   return (
-    <div className={`bg-gradient-to-r from-[#E92C92]/5 to-[#C81E78]/5 border border-[#E92C92]/20 rounded-lg p-4 ${className}`}>
+    <div className={`bg-gradient-to-r from-[#f2ff00]/5 to-[#f2ff00]/5 border border-[#f2ff00]/20 rounded-lg p-4 ${className}`}>
       <div className="flex items-start gap-3">
-        <div className="h-10 w-10 rounded-lg bg-[#E92C92]/10 flex items-center justify-center flex-shrink-0">
-          <Lock className="h-5 w-5 text-[#E92C92]" />
+        <div className="h-10 w-10 rounded-lg bg-[#f2ff00]/10 flex items-center justify-center flex-shrink-0">
+          <Lock className="h-5 w-5 text-[#f2ff00]" />
         </div>
         <div className="flex-1 min-w-0">
           <h3 className="font-semibold text-gray-900 mb-1">{featureName}</h3>
@@ -62,7 +62,7 @@ export default function UpgradePrompt({
           <Link to="/pricing">
             <Button
               size="sm"
-              className="bg-[#E92C92] hover:bg-[#d4267f] text-white gap-2"
+              className="bg-[#f2ff00] hover:bg-[#f2ff00] text-white gap-2"
             >
               <ArrowRight className="h-3 w-3" />
               Upgrade to {requiredTier}
@@ -85,7 +85,7 @@ export function UpgradeBanner({
   className = "",
 }) {
   return (
-    <div className={`bg-gradient-to-r from-[#E92C92] to-[#C81E78] text-white px-4 py-3 ${className}`}>
+    <div className={`bg-gradient-to-r from-[#f2ff00] to-[#f2ff00] text-white px-4 py-3 ${className}`}>
       <div className="flex items-center justify-between max-w-7xl mx-auto">
         <div className="flex items-center gap-3">
           <Sparkles className="h-5 w-5" />
@@ -99,7 +99,7 @@ export function UpgradeBanner({
             <Button
               size="sm"
               variant="secondary"
-              className="bg-white text-[#E92C92] hover:bg-gray-100 gap-2"
+              className="bg-white text-[#f2ff00] hover:bg-gray-100 gap-2"
             >
               <ArrowRight className="h-3 w-3" />
               Upgrade Now

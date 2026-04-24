@@ -23,7 +23,7 @@ export const ContentAreaLoader = ({ message = 'Loading...' }) => {
       <div className="text-center">
         {/* Axolop Logo */}
         <div className="w-12 h-12 mx-auto mb-3 relative">
-          <div className="absolute inset-0 bg-gradient-to-br from-[#3F0D28] to-[#8B1538] rounded-lg animate-pulse"></div>
+          <div className="absolute inset-0 bg-gradient-to-br from-[#101010] to-[#8B1538] rounded-lg animate-pulse"></div>
           <div className="absolute inset-0 flex items-center justify-center">
             <img
               src="/axolop-logo.webp"
@@ -36,15 +36,15 @@ export const ContentAreaLoader = ({ message = 'Loading...' }) => {
         {/* Loading Animation - Bouncing Dots */}
         <div className="flex space-x-1 justify-center mb-3">
           <div
-            className="w-1.5 h-1.5 bg-[#3F0D28] rounded-full animate-bounce"
+            className="w-1.5 h-1.5 bg-[#101010] rounded-full animate-bounce"
             style={{ animationDelay: '0ms' }}
           ></div>
           <div
-            className="w-1.5 h-1.5 bg-[#3F0D28] rounded-full animate-bounce"
+            className="w-1.5 h-1.5 bg-[#101010] rounded-full animate-bounce"
             style={{ animationDelay: '100ms' }}
           ></div>
           <div
-            className="w-1.5 h-1.5 bg-[#3F0D28] rounded-full animate-bounce"
+            className="w-1.5 h-1.5 bg-[#101010] rounded-full animate-bounce"
             style={{ animationDelay: '200ms' }}
           ></div>
         </div>
@@ -64,7 +64,7 @@ export const ContentAreaLoader = ({ message = 'Loading...' }) => {
 export const ContentAreaSpinner = () => {
   return (
     <div className="flex-1 flex items-center justify-center min-h-[200px]">
-      <div className="animate-spin rounded-full h-8 w-8 border-2 border-gray-200 dark:border-gray-700 border-t-[#3F0D28]" />
+      <div className="animate-spin rounded-full h-8 w-8 border-2 border-gray-200 dark:border-gray-700 border-t-[#101010]" />
     </div>
   );
 };
@@ -122,7 +122,7 @@ export const ContentAreaError = ({ message, onRetry }) => {
         {onRetry && (
           <button
             onClick={onRetry}
-            className="px-4 py-2 bg-[#3F0D28] text-white rounded-lg hover:bg-[#5a1a3d] transition-colors"
+            className="px-4 py-2 bg-[#101010] text-white rounded-lg hover:bg-[#5a1a3d] transition-colors"
           >
             Try Again
           </button>

@@ -136,7 +136,7 @@ const NavigationBar = ({ transparent = false, className }) => {
                       className="relative overflow-hidden px-6 py-2.5 rounded-full leading-none flex items-center transition transform group-hover:-translate-y-0.5 active:scale-95"
                       style={{
                         background:
-                          "linear-gradient(180deg, #ff85c8 0%, #E92C92 30%, #c41e78 70%, #ff69b4 100%)",
+                          "linear-gradient(180deg, #f2ff00 0%, #f2ff00 30%, #f2ff00 70%, #f2ff00 100%)",
                         boxShadow:
                           "inset 0 2px 3px rgba(255,255,255,0.5), inset 0 -2px 3px rgba(0,0,0,0.15), 0 6px 20px rgba(233,44,146,0.4), 0 2px 6px rgba(0,0,0,0.2)",
                         border: "1px solid rgba(255,255,255,0.3)",
@@ -201,7 +201,7 @@ const NavigationBar = ({ transparent = false, className }) => {
 
         {/* Affiliate Banner - CSS animation instead of Framer Motion height animation */}
         {affiliateName && (
-          <div className="overflow-hidden bg-gradient-to-r from-[#E92C92] via-[#0F0510] to-[#E92C92] animate-slideDown">
+          <div className="overflow-hidden bg-gradient-to-r from-[#f2ff00] via-[#0F0510] to-[#f2ff00] animate-slideDown">
             <div className="max-w-7xl mx-auto px-4 py-2 text-center">
               <p className="text-sm text-white/90">
                 <span className="font-medium">{affiliateName}</span> wants you

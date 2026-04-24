@@ -128,7 +128,7 @@ export function ContextMenuSubMenu({
           "w-full px-3 py-2 text-left text-sm font-medium",
           "flex items-center gap-3 transition-all duration-150",
           "text-gray-700 hover:bg-gray-50/80 hover:text-gray-900",
-          "dark:text-gray-200 dark:hover:bg-[#3F0D28]/15 dark:hover:text-white",
+          "dark:text-gray-200 dark:hover:bg-[#101010]/15 dark:hover:text-white",
           "focus:outline-none focus:ring-2 focus:ring-blue-500/50 focus:ring-inset",
           "active:scale-[0.98]"
         )}
@@ -171,7 +171,7 @@ export function ContextMenuSubMenu({
               "shadow-2xl shadow-gray-900/10",
               // Dark mode
               "dark:bg-[#0a0a0a]/92 dark:backdrop-blur-2xl",
-              "dark:border-[#3F0D28]/30",
+              "dark:border-[#101010]/30",
               "dark:shadow-[0_10px_40px_rgba(0,0,0,0.4),0_0_40px_rgba(63,13,40,0.15)]"
             )}
             style={{
@@ -240,7 +240,7 @@ export function ContextMenuSubMenu({
                       "flex items-center gap-3 transition-all duration-150",
                       "focus:outline-none focus:ring-2 focus:ring-blue-500/50 focus:ring-inset",
                       "text-gray-700 hover:bg-gray-50/80 hover:text-gray-900",
-                      "dark:text-gray-200 dark:hover:bg-[#3F0D28]/15 dark:hover:text-white",
+                      "dark:text-gray-200 dark:hover:bg-[#101010]/15 dark:hover:text-white",
                       isDisabled && "text-gray-400 dark:text-gray-600 cursor-not-allowed opacity-50",
                       isDestructive && !isDisabled && "text-red-600 hover:bg-red-50/80 hover:text-red-700 dark:text-red-400 dark:hover:bg-red-900/20 dark:hover:text-red-300",
                       "active:scale-[0.98]"
