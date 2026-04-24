@@ -12,63 +12,56 @@ export default {
     },
     extend: {
       colors: {
-        // Axolop Pink Color Palette
-        // Primary - Hot Pink/Magenta for CTAs and primary actions
+        // HIFICOPY Unified Branding — INBOXEQ reference
+        // Primary BG / Headers / Footers
+        black: {
+          DEFAULT: "#101010",
+          50: "#1a1a1a",
+          100: "#242424",
+          200: "#2e2e2e",
+          300: "#383838",
+          400: "#424242",
+          500: "#4c4c4c",
+          600: "#565656",
+          700: "#606060",
+          800: "#6a6a6a",
+          900: "#747474",
+        },
+        // Accent / CTA / Highlights
+        yellow: {
+          DEFAULT: "#f2ff00",
+          50: "#fdffb3",
+          100: "#fdff80",
+          200: "#fcff4d",
+          300: "#fcff1a",
+          400: "#f9ff00",
+          500: "#f2ff00",
+          600: "#c2cc00",
+          700: "#919900",
+          800: "#616600",
+          900: "#303300",
+        },
+        // Primary brand mapping
         primary: {
-          DEFAULT: "hsl(var(--primary))", // #E92C92 - Hot Pink/Magenta
-          foreground: "hsl(var(--primary-foreground))",
-          hover: "#C81E78", // Darker magenta for hover states
-          light: "#F472B6", // Lighter pink for glows/borders
-          // Category colors
-          blue: "hsl(var(--primary-blue))", // #5BB9F5 - Bright Sky Blue
-          green: "hsl(var(--primary-green))", // #2DCE89 - Emerald Green
-          yellow: "hsl(var(--primary-yellow))", // #F5A623 - Bright Saffron
-          black: "hsl(var(--primary-black))", // #1E1B24 - Dark Surface
-          accent: "hsl(var(--primary-accent))", // #E92C92 - Hot Pink
+          DEFAULT: "#f2ff00",
+          foreground: "#101010",
+          hover: "#e6e600",
+          light: "#f2ff00",
+          dark: "#101010",
+          accent: "#f2ff00",
         },
-
-        // Brand colors - Pink/Purple theme
+        // Brand colors — unified HIFICOPY palette
         brand: {
-          pink: "#E92C92", // Hot pink primary
-          purple: "#5B1046", // Brand purple for gradients
-          dark: "#0A030B", // Deepest void color
-          plum: "#140516", // Deep plum background (for section backgrounds only)
+          yellow: "#f2ff00",
+          accent: "#f2ff00",
+          dark: "#101010",
+          black: "#101010",
         },
-
-        // Full plum color palette
-        plum: {
-          50: "#CBA6F7", // Light plum text
-          100: "#9B7AAD", // Lighter variant
-          200: "#8B4F7A", // Lighter plum (for gradients)
-          300: "#6B2D54", // Mid-tone depth
-          400: "#5B1046", // Brand purple
-          500: "#3F0D28", // Primary burgundy plum
-          600: "#2E0F2F", // Hover states
-          700: "#140516", // Deep background
-          800: "#0A030B", // Void/darkest
-          900: "#050108", // Maximum depth
-        },
-
-        // Accent colors
-        accent1: {
-          DEFAULT: "#140516", // Deep plum background
-          light: "#2E0F2F", // Lighter purple gradient
-        },
-        accent2: {
-          DEFAULT: "#E2E8F0", // Metallic silver text
-          dim: "#94A3B8", // Muted silver subtext
-        },
-        accent3: {
-          DEFAULT: "#F59E0B", // Gold/amber for notifications
-          soft: "#FCD34D", // Soft gold accents
-        },
-
         // Surface colors
         surface: {
-          light: "#FFFFFF", // Dashboard/card backgrounds
-          dark: "#1E1B24", // Sidebar/dark UI
+          light: "#ffffff",
+          dark: "#101010",
         },
-
         // Neutral palette
         neutral: {
           50: "#fafafa",
@@ -82,14 +75,22 @@ export default {
           800: "#3a3a3c",
           900: "#1d1d1f",
         },
-
         // Semantic colors
         success: "#30d158",
-        warning: "#ff9f0a",
+        warning: "#f2ff00",
         error: "#ff453a",
         info: "#007aff",
-
-        // CSS Variable-based colors
+        // CRM specific
+        "crm-sidebar": "#101010",
+        "crm-sidebar-hover": "#1a1a1a",
+        "crm-sidebar-active": "#f2ff00",
+        "crm-bg-light": "#ffffff",
+        "crm-bg-dark": "#101010",
+        "crm-text-primary": "#ffffff",
+        "crm-text-secondary": "#a3a3a3",
+        "crm-border": "#2a2a2a",
+        "crm-accent": "#f2ff00",
+        // CSS Variable-based
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
         ring: "hsl(var(--ring))",
@@ -119,32 +120,38 @@ export default {
           DEFAULT: "hsl(var(--card))",
           foreground: "hsl(var(--card-foreground))",
         },
-
-        // CRM specific colors
-        "crm-sidebar": "#1E1B24", // Dark surface
-        "crm-sidebar-hover": "#2E0F2F", // Plum hover
-        "crm-sidebar-active": "#5B1046", // Brand purple active
-        "crm-bg-light": "#F8F9FA",
-        "crm-bg-dark": "#140516", // Deep plum background
-        "crm-text-primary": "#1F2937", // Dark gray for light backgrounds
-        "crm-text-secondary": "#94A3B8", // Muted silver
-        "crm-border": "#2E0F2F", // Plum border
-        "crm-accent": "#5B1046", // Brand purple accent
-
-        // Text colors for accessibility
-        "text-primary": "hsl(var(--text-on-light-primary))",
-        "text-secondary": "hsl(var(--text-on-light-secondary))",
-        "text-interactive": {
-          DEFAULT: "hsl(var(--text-on-dark-interactive))",
-          hover: "hsl(var(--text-on-dark-interactive-hover))",
-        },
       },
-      zIndex: {
-        60: "60",
-        70: "70",
-        80: "80",
-        90: "90",
-        100: "100",
+      fontFamily: {
+        // Headers / Nav / Logo — Bebas Neue
+        bebas: ["Bebas Neue", "sans-serif"],
+        // Body text — Inter
+        sans: [
+          "Inter",
+          "-apple-system",
+          "BlinkMacSystemFont",
+          "Segoe UI",
+          "Roboto",
+          "sans-serif",
+        ],
+        mono: ["JetBrains Mono", "SF Mono", "Monaco", "monospace"],
+      },
+      fontSize: {
+        hero: ["48px", { lineHeight: "1", letterSpacing: "-0.02em", fontWeight: "700" }],
+        display: ["36px", { lineHeight: "1.1", letterSpacing: "-0.01em", fontWeight: "700" }],
+        headline: ["24px", { lineHeight: "1.2", letterSpacing: "-0.01em", fontWeight: "600" }],
+        title: ["18px", { lineHeight: "1.3", letterSpacing: "-0.005em", fontWeight: "600" }],
+        body: ["14px", { lineHeight: "1.6", letterSpacing: "0em", fontWeight: "400" }],
+        caption: ["12px", { lineHeight: "1.4", letterSpacing: "0.05em", fontWeight: "500", textTransform: "uppercase" }],
+        xs: ["11px", { lineHeight: "16px" }],
+        sm: ["13px", { lineHeight: "18px" }],
+        base: ["14px", { lineHeight: "20px" }],
+        lg: ["16px", { lineHeight: "24px" }],
+        xl: ["18px", { lineHeight: "28px" }],
+        "2xl": ["24px", { lineHeight: "32px" }],
+        "3xl": ["30px", { lineHeight: "1.2" }],
+        "4xl": ["36px", { lineHeight: "1.1" }],
+        "5xl": ["48px", { lineHeight: "1" }],
+        "6xl": ["60px", { lineHeight: "1" }],
       },
       borderRadius: {
         xs: "4px",
@@ -157,60 +164,32 @@ export default {
         "var-radius-md": "calc(var(--radius) - 2px)",
         "var-radius-sm": "calc(var(--radius) - 4px)",
       },
-      scale: {
-        98: "0.98",
+      boxShadow: {
+        xs: "0 1px 2px 0 rgb(0 0 0 / 0.05)",
+        sm: "0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1)",
+        md: "0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1)",
+        lg: "0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1)",
+        xl: "0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1)",
+        // Yellow glow for CTA buttons
+        "yellow-glow": "0 0 25px -5px rgba(242, 255, 0, 0.6)",
+        "yellow-glow-hover": "0 0 35px -5px rgba(242, 255, 0, 0.8)",
+        // Card shadows
+        "crm-card": "0 1px 3px 0 rgba(0, 0, 0, 0.3)",
+        "crm-hover": "0 4px 6px -1px rgba(0, 0, 0, 0.4)",
+        "crm-modal": "0 20px 25px -5px rgba(0, 0, 0, 0.5)",
+        // Glass morphism
+        glass: "0 8px 32px rgba(0, 0, 0, 0.3)",
       },
-      fontFamily: {
-        // Body text - Inter
-        sans: [
-          "Inter",
-          "-apple-system",
-          "BlinkMacSystemFont",
-          "Segoe UI",
-          "Roboto",
-          "sans-serif",
-        ],
-        // Headers - Epilogue
-        epilogue: ["Epilogue", "Inter", "-apple-system", "sans-serif"],
-        display: ["Plus Jakarta Sans", "Inter", "-apple-system", "sans-serif"],
-        mono: ["SF Mono", "Monaco", "Inconsolata", "Fira Code", "monospace"],
-      },
-      fontSize: {
-        hero: [
-          "48px",
-          { lineHeight: "1", letterSpacing: "-0.02em", fontWeight: "700" },
-        ],
-        display: [
-          "36px",
-          { lineHeight: "1.1", letterSpacing: "-0.01em", fontWeight: "700" },
-        ],
-        headline: [
-          "24px",
-          { lineHeight: "1.2", letterSpacing: "-0.01em", fontWeight: "600" },
-        ],
-        title: [
-          "18px",
-          { lineHeight: "1.3", letterSpacing: "-0.005em", fontWeight: "600" },
-        ],
-        body: [
-          "14px",
-          { lineHeight: "1.6", letterSpacing: "0em", fontWeight: "400" },
-        ],
-        caption: [
-          "12px",
-          {
-            lineHeight: "1.4",
-            letterSpacing: "0.05em",
-            fontWeight: "500",
-            textTransform: "uppercase",
-          },
-        ],
-        xs: ["11px", { lineHeight: "16px" }],
-        sm: ["13px", { lineHeight: "18px" }],
-        base: ["14px", { lineHeight: "20px" }],
-        lg: ["16px", { lineHeight: "24px" }],
-        xl: ["18px", { lineHeight: "28px" }],
-        "2xl": ["24px", { lineHeight: "32px" }],
+      backgroundImage: {
+        // Unified brand gradient
+        "brand-gradient": "linear-gradient(to right, #101010, #1a1a1a)",
+        "brand-radial": "radial-gradient(circle at 50% 0%, #1a1a1a 0%, #101010 60%)",
+        // Yellow CTA gradient
+        "primary-gradient": "linear-gradient(to right, #f2ff00, #e6e600)",
+        // Dark sidebar
+        "sidebar-gradient": "linear-gradient(180deg, #101010 0%, #1a1a1a 100%)",
+        // Silver text
+        "silver-text": "linear-gradient(to bottom, #ffffff 30%, #a3a3a3 100%)",
       },
       keyframes: {
         "accordion-down": {
@@ -234,8 +213,8 @@ export default {
           "50%": { opacity: 0.5 },
         },
         "glow-pulse": {
-          "0%, 100%": { boxShadow: "0 0 20px rgba(233, 44, 146, 0.4)" },
-          "50%": { boxShadow: "0 0 30px rgba(233, 44, 146, 0.6)" },
+          "0%, 100%": { boxShadow: "0 0 20px rgba(242, 255, 0, 0.4)" },
+          "50%": { boxShadow: "0 0 30px rgba(242, 255, 0, 0.6)" },
         },
         "spring-bounce": {
           "0%": { transform: "scale(0.95)", opacity: 0 },
@@ -245,10 +224,6 @@ export default {
         "spring-slide": {
           "0%": { transform: "translateX(-10px)", opacity: 0 },
           "100%": { transform: "translateX(0)", opacity: 1 },
-        },
-        "spring-rotate": {
-          "0%": { transform: "rotate(-5deg)", opacity: 0 },
-          "100%": { transform: "rotate(0deg)", opacity: 1 },
         },
       },
       animation: {
@@ -260,36 +235,16 @@ export default {
         "glow-pulse": "glow-pulse 2s ease-in-out infinite",
         "spring-bounce": "spring-bounce 0.6s cubic-bezier(0.34, 1.56, 0.64, 1)",
         "spring-slide": "spring-slide 0.5s cubic-bezier(0.34, 1.56, 0.64, 1)",
-        "spring-rotate": "spring-rotate 0.4s cubic-bezier(0.34, 1.56, 0.64, 1)",
       },
-      boxShadow: {
-        xs: "0 1px 2px 0 rgb(0 0 0 / 0.05)",
-        sm: "0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1)",
-        md: "0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1)",
-        lg: "0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1)",
-        xl: "0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1)",
-        // Neon glow shadows for buttons
-        neon: "0 0 25px -5px rgba(233, 44, 146, 0.6)",
-        "neon-hover": "0 0 35px -5px rgba(233, 44, 146, 0.8)",
-        "neon-active": "0 0 15px -5px rgba(233, 44, 146, 0.9)",
-        // Card and modal shadows
-        "crm-card": "0 1px 3px 0 rgba(0, 0, 0, 0.1)",
-        "crm-hover": "0 4px 6px -1px rgba(0, 0, 0, 0.1)",
-        "crm-modal": "0 20px 25px -5px rgba(0, 0, 0, 0.2)",
-        // Glass morphism
-        glass: "0 8px 32px rgba(0, 0, 0, 0.1)",
+      zIndex: {
+        60: "60",
+        70: "70",
+        80: "80",
+        90: "90",
+        100: "100",
       },
-      backgroundImage: {
-        // Metallic silver text gradient
-        "silver-text": "linear-gradient(to bottom, #FFFFFF 30%, #94A3B8 100%)",
-        // Purple radial glow
-        "glow-radial":
-          "radial-gradient(circle at 50% 0%, #5B1046 0%, #140516 60%)",
-        // Primary button gradient
-        "primary-gradient": "linear-gradient(to right, #D92683, #F43F5E)",
-        // Plum sidebar gradient
-        "sidebar-gradient":
-          "linear-gradient(180deg, #1E1B24 0%, #140516 50%, #0A030B 100%)",
+      scale: {
+        98: "0.98",
       },
     },
   },
